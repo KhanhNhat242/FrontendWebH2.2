@@ -1,0 +1,36 @@
+@import '../globalStyle/variables';
+
+.header-wrapper{
+    width: 100%;
+    background-color: $primary !important;
+
+    .header-row{
+        justify-content: space-between;
+        margin: 0 !important;
+        padding: 0 o !important;
+        width: 100%;
+    
+        .navbar-toggler{
+            background-color: $defaultColor;
+        }
+        
+        .header-left{
+            .logo{
+                width: 150px;
+                height: 136px;
+            }
+        }
+    
+        .header-right{
+            // color: #fff;
+
+            .nav-item{
+                color: #fff;
+
+                &:hover{
+                    background-color: $defaultColor;
+                }
+            }
+        }
+    }
+}
