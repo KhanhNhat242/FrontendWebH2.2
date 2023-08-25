@@ -1,14 +1,17 @@
 @import '../globalStyle/variables';
+@import '.././globalStyle/mixin';
 
-.header-wrapper{
-    width: 100%;
-    background-color: $primary !important;
+// .header-wrapper{
+    // width: 100%;
+    // background-color: $primary !important;
 
-    .header-row{
-        justify-content: space-between;
-        margin: 0 !important;
-        padding: 0 o !important;
+    .header-nav{
         width: 100%;
+        background-color: $primary;
+        margin: 0;
+        padding: 0 40px !important;
+        width: 100%;
+        float: right;
     
         .navbar-toggler{
             background-color: $defaultColor;
@@ -16,21 +19,74 @@
         
         .header-left{
             .logo{
-                width: 150px;
-                height: 136px;
+                width: 120px;
+                height: 120px;
+
+            @include mobile{
+                width: 60px;
+                height: 60px;
             }
+           }
         }
     
         .header-right{
-            // color: #fff;
+            // width: 1512px;
+            margin-left: 688px;
+            // float: right;
 
-            .nav-item{
-                color: #fff;
+            .nav-item-wrapper{
+                margin: 0 !important;
 
-                &:hover{
-                    background-color: $defaultColor;
+                .nav-item{
+                    color: #fff;
+                    font-size: 20px;
+                    font-weight: 500;
+                
+                    &:hover{
+                        background-color: $defaultColor;
+                    }
+
+                    @include tablet{
+                        padding-left: 20px;
+                    }
+
+                    @include mobile{
+                        text-align: center;
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            @include tablet{
+                margin: 0;
+            }
+
+            @include mobile{
+                margin: 0;
+            }
+
+            .login-wrapper{
+                background-color: $defaultColor;
+
+                .btn-login{
+                    color: #fff;
+                    font-size: 20px;
+                    font-weight: 500;
+
+                    @include tablet{
+                        padding-left: 20px;
+                    }
+
+                    @include mobile{
+                        text-align: center;
+                        font-size: 18px;
+                    }
+                }
+
+                &:hover .btn-login{
+                    color: $primary;
                 }
             }
         }
     }
-}
+// }
