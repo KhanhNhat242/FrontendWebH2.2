@@ -1,0 +1,313 @@
+@import '../globalStyle//variables';
+@import '../globalStyle//mixin';
+
+.home-wrapper{
+    margin-top: 75px;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: $primary;
+    overflow: hidden;
+
+    @include mobile{
+        margin-top: 70px;
+        height: 286px;
+    }
+}
+
+.h2-title{
+    position: absolute;
+    bottom: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include mobile{
+        width: 320px;
+        transform: translateY(-40px) translateX(-50%);
+    }
+}
+
+.background-img{
+    position: absolute;
+    bottom: -132px;
+    width: 100%;
+
+    @include tablet{
+        bottom: 0;
+    }
+
+    @include mobile{ 
+        bottom: 0;
+        position: static;
+    }
+}
+
+.ai-club-txt{
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    width: 52%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    font-family: $defaultFont;
+
+    @include mobile{
+        font-size: 18px;
+        width: 82%;
+        top: 45%;
+    }
+}
+
+.mission-wrapper{
+    .mission-row{
+        padding: 40px;
+
+        @include tablet{
+            padding: 40px 5px;
+        }
+
+        @include mobile{
+            padding: 5px;
+        }
+        .mission-col1{
+            // width: 50%;
+            border-right: 1px solid $defaultColor;
+
+            @include mobile{
+                border: none;
+            }
+
+            .mission-title{
+                font-size: $fontSizeTitle;
+                font-weight: bold;
+                font-family: $defaultFont;
+                margin: 10px;
+
+                @include mobile{
+                    font-size: 40px;
+                }
+            }
+
+            .mission-detail{
+                margin-top: 80px;
+
+                @include tablet{
+                    margin-top: 20px;   
+                }
+
+                @include mobile{
+                    margin-top: 20px;
+                }
+
+                .detail-txt{
+                    font-family: $defaultFont;
+                    font-size: $defaultFontSize;
+                    text-align: justify;
+                    margin: 10px;
+
+                    @include mobile{
+                        font-size: $fontSizeMobile;
+                    }
+                }
+            }
+        }
+
+        .mission-col2{
+            // width: 50%;
+            display: flex;
+            justify-content: center;
+
+            @include mobile{
+                margin: 40px 0;
+            }
+
+            .home21-img{
+                width: 450px;
+                
+                &:hover{
+                    border: 5px solid $defaultColor;
+                    border-radius: 65px;
+                    box-sizing: border-box;
+                }
+
+                @include tablet{
+                    width: 376px;
+                    height: 696px;
+                }
+
+                @include mobile{
+                    width: 390px;
+                }
+            }
+        }
+    }
+
+    .math-row{
+        background: linear-gradient(91deg, #C581DD 0%, #81ABDD 50%, #FFF 100%);
+        padding: 40px;
+        height: 600px;
+    
+        @include tablet{
+            height: 680px;
+            padding: 40px 5px;
+        }
+    
+        @include mobile{
+            padding: 5px;
+            height: 1000px;
+        }
+    
+        .math-col1{
+            border-right: 1px solid #fff;
+            padding-right: 92px;
+            position: relative;
+    
+            @include tablet{
+                padding-right: 22px;
+            }
+    
+            @include mobile{
+                border: none;
+                width: 100% !important;
+                padding: 15px 5px;
+            }
+    
+            .home31-img{
+                width: 300px;
+                position: absolute;
+                left: 8%;
+                
+                &:hover{
+                    border: 5px solid $defaultColor;
+                    border-radius: 35px;
+                    box-sizing: border-box;
+                }
+    
+                @include tablet{
+                    top: 8%;
+                    left: 15%;
+                }
+    
+                @include mobile{
+                    // left: 19%;
+                    position: static;
+                    margin: 10px 0 0 66px;
+                }
+            }
+    
+            .home32-img{
+                width: 300px;
+                position: absolute;
+                left: 30%;
+                top: 48%;
+    
+                &:hover{
+                    border: 5px solid $defaultColor;
+                    border-radius: 38px;
+                    box-sizing: border-box;
+                }
+    
+                @include tablet{
+                    left: 15%;
+                    top: 56%;
+                }
+    
+                @include mobile{
+                    // top: 44%;
+                    // left: 20%;
+                    position: static;
+                    margin: 10px 0 0 66px;
+                }
+            }
+        }
+    
+        .math-col2{
+            margin: 40px;
+    
+            @include tablet{
+                margin: 40px 5px;
+            }
+    
+            @include mobile{
+                margin: 5px;
+                width: 100%;
+                padding: 0 12px;
+            }
+    
+            .math-title{
+                font-size: $fontSizeTitle;
+                font-weight: bold;
+                font-family: $defaultFont;
+                margin: 10px;
+    
+                @include mobile{
+                    font-size: 40px;
+                }
+            }
+    
+            .math-detail{
+                margin-top: 80px;
+    
+                @include mobile{
+                    margin-top: 20px;
+                }
+    
+                .detail-txt{
+                    font-family: $defaultFont;
+                    font-size: $defaultFontSize;
+                    text-align: justify;
+                    margin: 10px;
+    
+                    @include mobile{
+                        font-size: $fontSizeMobile;
+                    }
+                }
+            }
+        }
+    }
+
+    .spirit-row{
+        padding: 40px;
+        background-color: $primary;
+
+        @include mobile{
+            padding: 20px;
+        }
+
+        .spirit-col{
+            .spirit-item{
+                background-color: $defaultColor;
+                width: 250px;
+                height: 130px;
+                border-radius: 100px;
+                display: flex;
+                align-items: center;
+                margin: 0 66px;
+
+                @include tablet{
+                    margin: 0;
+                }
+
+                @include mobile{
+                    margin: 5px 90px;
+                    width: 200px;
+                    height: 100px;
+                }
+
+               .spirit-txt{
+                    color: $primary;
+                    font-size: 25px;
+                    margin: 0;
+                    padding: 34px;
+                    text-align: center;
+
+                    @include mobile{
+                        font-size: $fontSizeMobile;
+                    }
+               }
+            }
+        }
+    }
+}

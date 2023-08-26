@@ -11,16 +11,23 @@
         margin: 0;
         padding: 0 40px !important;
         width: 100%;
-        float: right;
+        // float: right;
+        position: fixed !important;
+        top: 0;
+        z-index: 1;
+        display: flex;
     
         .navbar-toggler{
             background-color: $defaultColor;
         }
         
         .header-left{
+            // flex: 1;
+
             .logo{
-                width: 120px;
-                height: 120px;
+                width: 80px;
+                padding: 5px;
+                // height: 120px;
 
             @include mobile{
                 width: 60px;
@@ -31,16 +38,34 @@
     
         .header-right{
             // width: 1512px;
-            margin-left: 688px;
+            // margin-left: 672px;
             // float: right;
+            flex: 1;
+            justify-content: flex-end;
+
+            @include tablet{
+                width: 100%;
+                flex: none;
+                justify-content: center;
+                padding-bottom: 20px 0;
+            }
+
+            @include mobile{
+                width: 100%;
+                padding-bottom: 20px 0;
+                flex: none;
+                justify-content: center;
+            }
 
             .nav-item-wrapper{
                 margin: 0 !important;
 
                 .nav-item{
                     color: #fff;
-                    font-size: 20px;
+                    font-size: 15px;
                     font-weight: 500;
+                    border-radius: 3px;
+                    margin: 0 5px;
                 
                     &:hover{
                         background-color: $defaultColor;
@@ -48,11 +73,13 @@
 
                     @include tablet{
                         padding-left: 20px;
+                        margin: 0;
+                        text-align: center;
                     }
 
                     @include mobile{
                         text-align: center;
-                        font-size: 18px;
+                        margin: 0;
                     }
                 }
             }
@@ -67,19 +94,20 @@
 
             .login-wrapper{
                 background-color: $defaultColor;
+                border-radius: 3px;
 
                 .btn-login{
                     color: #fff;
-                    font-size: 20px;
+                    font-size: 15px;
                     font-weight: 500;
 
                     @include tablet{
                         padding-left: 20px;
+                        text-align: center;
                     }
 
                     @include mobile{
                         text-align: center;
-                        font-size: 18px;
                     }
                 }
 
