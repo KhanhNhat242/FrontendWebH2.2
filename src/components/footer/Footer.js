@@ -9,12 +9,12 @@ import './Footer.scss'
 function Footer() {
     return ( 
         <div className='footer-wrapper'>
-            <div className='footer-row1 row'>
-                <img src={logo} alt='logo' className='footer-logo' />
-            </div>
+            {/* <div className='footer-row1 row'>
+            </div> */}
             <div className='footer-row2 row'>
                 <div className='footer-tks col-lg-3'>
                     <h2 className='tks-txt'>Cảm ơn vì đã ghé thăm</h2>
+                    <img src={logo} alt='logo' className='footer-logo' />
                 </div>
                 <div className='footer-contact col-lg-3'>
                     <h2 className='contact-title'>Liên hệ</h2>

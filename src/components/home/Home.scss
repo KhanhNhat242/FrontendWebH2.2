@@ -5,7 +5,7 @@
     margin-top: 75px;
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 650px;
     background-color: $primary;
     overflow: hidden;
 
@@ -38,7 +38,7 @@
 
     @include mobile{ 
         bottom: 0;
-        position: static;
+        // position: static;
     }
 }
 
@@ -56,7 +56,7 @@
     @include mobile{
         font-size: 18px;
         width: 82%;
-        top: 45%;
+        top: 35%;
     }
 }
 
@@ -138,7 +138,7 @@
                 }
 
                 @include mobile{
-                    width: 390px;
+                    width: 340px;
                 }
             }
         }
@@ -156,7 +156,7 @@
     
         @include mobile{
             padding: 5px;
-            height: 1000px;
+            height: 1050px;
         }
     
         .math-col1{
@@ -193,7 +193,7 @@
                 @include mobile{
                     // left: 19%;
                     position: static;
-                    margin: 10px 0 0 66px;
+                    margin: 10px 8%;
                 }
             }
     
@@ -218,7 +218,7 @@
                     // top: 44%;
                     // left: 20%;
                     position: static;
-                    margin: 10px 0 0 66px;
+                    margin: 10px 8%;
                 }
             }
         }
@@ -281,32 +281,51 @@
                 background-color: $defaultColor;
                 width: 250px;
                 height: 130px;
-                border-radius: 100px;
+                // border-radius: 100px;
                 display: flex;
                 align-items: center;
-                margin: 0 66px;
+                margin: 0 24%;
 
                 @include tablet{
                     margin: 0;
                 }
 
                 @include mobile{
-                    margin: 5px 90px;
+                    margin: 5px 20%;
                     width: 200px;
                     height: 100px;
+                }
+
+                &:hover{
+                    border: 2px solid #fff;
+                    box-sizing: border-box;
                 }
 
                .spirit-txt{
                     color: $primary;
                     font-size: 25px;
                     margin: 0;
-                    padding: 34px;
+                    padding: 30px;
                     text-align: center;
 
                     @include mobile{
                         font-size: $fontSizeMobile;
                     }
                }
+            }
+
+            .spirit-br1{
+                border-top-left-radius: 100px;
+                border-bottom-right-radius: 100px;
+            }
+
+            .spirit-br2{
+                border-radius: 100px;
+            }
+
+            .spirit-br3{
+                border-top-right-radius: 100px;
+                border-bottom-left-radius: 100px;
             }
         }
     }

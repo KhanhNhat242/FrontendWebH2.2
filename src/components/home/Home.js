@@ -14,7 +14,7 @@ function Home() {
                 <img src={title} alt="AI-CLUB" className="h2-title"/>
                 <img src={backgroundimg} alt="background-img" className='background-img' />
                 <p className='ai-club-txt'>Câu lạc bộ Trí tuệ Nhân tạo là nơi dành cho sinh viên Công nghệ thông tin IUH học tập và 
-                    nghiên cứu về trí tuệ nhân tạo.</p>
+                    nghiên cứu về trí tuệ nhân tạo</p>
             </div>
             <Container className='mission-wrapper'>
                 <Row className='mission-row'>
@@ -55,18 +55,18 @@ function Home() {
                 </Row>
                 <Row className='spirit-row'>
                     <Col className='spirit-col'>
-                        <div className='spirit-item'>
+                        <div className='spirit-item spirit-br1'>
                             <p className='spirit-txt'>Một tập thể đoàn kết hỗ trợ lẫn nhau</p>
                         </div>
                     </Col>
                     <Col className='spirit-col'>
-                        <div className='spirit-item'>
+                        <div className='spirit-item spirit-br2'>
                             <p className='spirit-txt'>Tôn trọng và thấu hiểu nhau</p>
                         </div>
                     </Col>
                     <Col className='spirit-col'>
-                        <div className='spirit-item'>
-                            <p className='spirit-txt'> Kết nối sinh viên tài năng để  tạo nên giá trị thực.</p>
+                        <div className='spirit-item spirit-br3'>
+                            <p className='spirit-txt'> Kết nối sinh viên tài năng để  tạo nên giá trị thực</p>
                         </div>
                     </Col>
                 </Row>

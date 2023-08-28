@@ -1,0 +1,152 @@
+@import '.././globalStyle/mixin';
+@import '.././globalStyle/variables';
+
+.wrapper{
+    position: relative;
+    top: 90px;
+    height: 635px;
+
+    @include mobile{
+        height: 376px;
+        margin-top: -4px;
+    }
+
+    .achievement-background{
+        width: 100%;
+        height: 635px;
+
+        @include mobile{
+            height: 286px;
+        }
+    }
+}
+
+.achievement-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-120%);
+
+    @include mobile{
+        width: 320px;
+    }
+}
+
+.achieve-wrapper{
+    margin-top: 90px;
+    padding: 40px;
+    background-color: $primary;
+
+    @include mobile{
+        padding: 20px;
+        margin-top: 0;
+    }
+
+    .achieve-row{
+        // height: 5000px;
+
+        .achieve-col-left{
+            @include mobile{
+                margin-bottom: 20px;
+            }
+
+            .btn-wrapper{
+                position: -webkit-sticky;
+                position: sticky;
+                top: 95px;
+
+                .achieve-link{
+                    .achieve-btn{
+                        background-color: $defaultColor;
+                        color: #fff;
+                        border: none;
+                        border-radius: 5px;
+                        margin: 10px 0;
+                        padding: 5px 0;
+                        width: 100%;
+                        font-size: $defaultFontSize;
+                        font-family: $defaultFont;
+
+                        @include mobile{
+                            font-size: $fontSizeMobile;
+                        }
+
+                        &:hover{
+                            // border: 1px solid #fff;
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .achieve-col-right{
+        .achieve-txt{
+            font-size: $defaultFontSize;
+            font-family: $defaultFont;
+            color: #fff;
+            text-align: justify;
+
+            @include mobile{
+                font-size: $fontSizeMobile;
+            }
+        }
+
+        .paper-title{
+            color: #fff;
+            font-weight: 400;
+            font-family: $defaultFont;
+            text-align: center;
+
+            @include mobile{
+                font-size: 25px;
+            }
+        }
+
+        .paper-row{
+            margin: 20px 0;
+
+            .paper-col{
+                .paper-txt1{
+                    color: #fff;
+                    text-align: center;
+                }
+
+                .paper-txt2{
+                    color: #fff;
+                    opacity: 0.5;
+                    text-align: center;
+                }
+            }
+        }
+        .achieve-row1{
+            // margin: 20px 0;
+
+            .achieve-col1{
+                padding: 0;
+
+                @include mobile{
+                    margin: 5px;
+                }
+
+                .achieve-img{
+                    // width: 100%;
+                    border-radius: 20px;
+                    width: 245px;
+                    height: 190px;
+                    margin: 10px;
+
+                    @include mobile{
+                        width: 162px;
+                        height: 105px;
+                    }
+
+                    &:hover{
+                        border: 5px solid $defaultColor;
+                    }
+                }
+            }
+        }
+    }
+}
