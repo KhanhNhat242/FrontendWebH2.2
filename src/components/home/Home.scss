@@ -23,7 +23,7 @@
 
     @include mobile{
         width: 320px;
-        transform: translateY(-40px) translateX(-50%);
+        transform: translateY(-15px) translateX(-50%);
     }
 }
 
@@ -56,7 +56,7 @@
     @include mobile{
         font-size: 18px;
         width: 82%;
-        top: 35%;
+        top: 40%;
     }
 }
 
@@ -80,13 +80,13 @@
             }
 
             .mission-title{
-                font-size: $fontSizeTitle;
+                font-size: 55px;
                 font-weight: bold;
                 font-family: $defaultFont;
                 margin: 10px;
 
                 @include mobile{
-                    font-size: 40px;
+                    font-size: 34px;
                 }
             }
 
@@ -106,6 +106,7 @@
                     font-size: $defaultFontSize;
                     text-align: justify;
                     margin: 10px;
+                    line-height: $defaultLineHeight;
 
                     @include mobile{
                         font-size: $fontSizeMobile;
@@ -147,7 +148,7 @@
     .math-row{
         background: linear-gradient(91deg, #C581DD 0%, #81ABDD 50%, #FFF 100%);
         padding: 40px;
-        height: 600px;
+        height: 650px;
     
         @include tablet{
             height: 680px;
@@ -156,7 +157,7 @@
     
         @include mobile{
             padding: 5px;
-            height: 1050px;
+            height: 995px;
         }
     
         .math-col1{
@@ -171,54 +172,57 @@
             @include mobile{
                 border: none;
                 width: 100% !important;
-                padding: 15px 5px;
+                padding: 0;
             }
-    
-            .home31-img{
-                width: 300px;
-                position: absolute;
-                left: 8%;
-                
-                &:hover{
-                    border: 5px solid $defaultColor;
-                    border-radius: 35px;
-                    box-sizing: border-box;
+
+            .img-wrapper{
+                display: flex;
+                justify-content: center;
+                margin: 30px 0;
+
+                .home31-img{
+                    width: 300px;
+                    position: absolute;
+                    left: 8%;
+                    
+                    &:hover{
+                        border: 5px solid $defaultColor;
+                        border-radius: 35px;
+                        box-sizing: border-box;
+                    }
+        
+                    @include tablet{
+                        top: 8%;
+                        left: 15%;
+                    }
+        
+                    @include mobile{
+                        width: 330px;
+                        position: static;
+                    }
                 }
-    
-                @include tablet{
-                    top: 8%;
-                    left: 15%;
-                }
-    
-                @include mobile{
-                    // left: 19%;
-                    position: static;
-                    margin: 10px 8%;
-                }
-            }
-    
-            .home32-img{
-                width: 300px;
-                position: absolute;
-                left: 30%;
-                top: 48%;
-    
-                &:hover{
-                    border: 5px solid $defaultColor;
-                    border-radius: 38px;
-                    box-sizing: border-box;
-                }
-    
-                @include tablet{
-                    left: 15%;
-                    top: 56%;
-                }
-    
-                @include mobile{
-                    // top: 44%;
-                    // left: 20%;
-                    position: static;
-                    margin: 10px 8%;
+        
+                .home32-img{
+                    width: 300px;
+                    position: absolute;
+                    left: 30%;
+                    top: 48%;
+        
+                    &:hover{
+                        border: 5px solid $defaultColor;
+                        border-radius: 38px;
+                        box-sizing: border-box;
+                    }
+        
+                    @include tablet{
+                        left: 15%;
+                        top: 56%;
+                    }
+        
+                    @include mobile{
+                        width: 330px;
+                        position: static;
+                    }
                 }
             }
         }
@@ -231,19 +235,22 @@
             }
     
             @include mobile{
-                margin: 5px;
+                margin-top: -10px;
+                margin-left: 0;
+                margin-right: 0;
+                // margin-bottom: 20px;
                 width: 100%;
-                padding: 0 12px;
+                padding: 0 20px;
             }
     
             .math-title{
-                font-size: $fontSizeTitle;
+                font-size: 55px;
                 font-weight: bold;
                 font-family: $defaultFont;
                 margin: 10px;
     
                 @include mobile{
-                    font-size: 40px;
+                    font-size: 34px;
                 }
             }
     
@@ -257,11 +264,13 @@
                 .detail-txt{
                     font-family: $defaultFont;
                     font-size: $defaultFontSize;
+                    line-height: $defaultLineHeight;
                     text-align: justify;
                     margin: 10px;
     
                     @include mobile{
                         font-size: $fontSizeMobile;
+                        margin: 0;
                     }
                 }
             }

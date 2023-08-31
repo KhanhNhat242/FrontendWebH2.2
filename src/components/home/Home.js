@@ -38,8 +38,12 @@ function Home() {
                 </Row>
                 <Row className='math-row'>
                     <Col className='math-col1'>
-                        <img src={home31} alt='home31' className='home31-img'/>
-                        <img src={home32} alt='home32' className='home32-img'/>
+                        <div className='img-wrapper'>
+                            <img src={home31} alt='home31' className='home31-img'/>
+                        </div>
+                        <div className='img-wrapper'>
+                            <img src={home32} alt='home32' className='home32-img'/>
+                        </div>
                     </Col>
                     <Col className='math-col2'>
                         <h1 className='math-title'>Về Toán Học</h1>

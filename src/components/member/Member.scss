@@ -1,0 +1,150 @@
+@import '.././globalStyle/variables';
+@import '.././globalStyle/mixin';
+
+.member-wrapper{
+    margin-top: 57px;
+    padding: 30px 16%;
+    background-color: $primary;
+
+    .member-row1{
+        .role{
+            font-size: 55px;
+            font-family: $defaultFont;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+        }
+    }
+
+    .member-row2{
+       .member-col1{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            padding: 0 20px;
+
+            .avt-wrapper{
+                .avt-link{
+                    --uiMaskClipPath: var(--maskClipPath);
+                    box-sizing: var(--maskBoxSizing, border-box);
+                    display: var(--maskDisplay, inline-flex);
+                    padding: var(--maskStrokeThickness, 3px);
+                    clip-path: var(--uiMaskClipPath);
+                    background-color: var(--maskStrokeColor, currentColor);
+                    --maskAnimationDuration: .9s;
+                    --maskAnimationTimingFunction: cubic-bezier(1, 0.18, 0, 1.14);
+                    --maskClipPath: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+                    transition: clip-path var(--maskAnimationDuration, .2s) var(--maskAnimationTimingFunction, ease-out);
+
+                    &:hover{
+                        --maskClipPath: polygon(0 0, 90% 0, 100% 0, 100% 90%, 100% 100%, 10% 100%, 0 100%, 0 10%); 
+                        --maskClipPath: polygon(100% 0, 100% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+                    }
+
+                    &:focus{
+                        --maskClipPath: polygon(0 0, 90% 0, 100% 0, 100% 90%, 100% 100%, 10% 100%, 0 100%, 0 10%); 
+                        --maskClipPath: polygon(100% 0, 100% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+                    }
+
+                    .avt-mentor{
+                        // max-width: 100%;
+                        display: block;
+                        transition: clip-path var(--maskAnimationDuration, .2s) var(--maskAnimationTimingFunction, ease-out);
+                        clip-path: var(--uiMaskClipPath);
+                        width: 250px;
+                        background-color: #fff;
+                    }
+                }
+            }
+
+            // .avt-mentor{
+            //     width: 250px;
+            //     border: 5px solid #000;
+            //     // border-radius: 40%;
+            // }
+
+            .detail-wrapper{
+                background-color: $defaultColor;
+                position: absolute;
+                top: 290px;
+                width: 300px;
+                border-radius: 40px;
+                padding: 5px;
+
+                &:hover{
+                    border: 2px solid #fff;
+                }
+
+                .name{      
+                    font-family: $defaultFont; 
+                    margin: 0;  
+                    color: #fff;    
+                    text-align: center;             
+                }
+
+                .position{      
+                    font-family: $defaultFont;
+                    margin: 0;
+                    color: #fff;
+                    text-align: center;
+                }
+            }
+
+            .detail{
+                font-family: $defaultFont;
+                text-align: justify;
+                color: #fff;
+            }
+       } 
+
+    }
+}
+
+.member-detail-wrapper{
+    background-color: $primary;
+    padding: 0;
+
+    .member-detail-row{
+        padding: 0 8%;
+
+        .role{
+            font-size: 55px;
+            font-family: $defaultFont;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+        }
+
+        .member-detail-col{
+            .avt-detail{
+                border-radius: 30px;
+            }
+            
+            .detail-member{
+                font-family: $defaultFont;
+                font-size: $defaultFontSize;
+                text-align: justify;
+                color: #fff;
+                padding-left: 3%;
+            }
+        }
+
+    }
+}
+
+.carousel-wrapper{
+    background-color: #fff;
+    padding: 5px 0;
+    width: 100%;
+
+    .avt-wrapper{
+        display: flex;
+        justify-content: center;
+
+        .avt-member{
+            width: 75%;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+}

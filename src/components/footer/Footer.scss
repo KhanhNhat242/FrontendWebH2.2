@@ -10,10 +10,11 @@
     margin: 0;
     padding: 40px;
     width: 100%;
+    // font-family: serif;
     // padding-top: 130px;
 
     @include mobile{
-        padding-top: 0;
+        padding: 20px;
     }
 
     // .footer-row1{
@@ -30,6 +31,8 @@
     // }
 
     .footer-row2{
+        padding: 0 180px;
+
         .footer-tks{
             width: 33%;
 
@@ -46,6 +49,7 @@
             
             .tks-txt{
                 color: #fff;
+                // font-size: 22px;
             }
             
             .footer-logo{
@@ -61,7 +65,8 @@
         }
         
         .footer-contact{
-            width: 33%;
+            width: 50%;
+            text-align: center;
 
             @include tablet{
                 width: 100%;
@@ -82,6 +87,7 @@
 
                 .location-txt{
                     color: #fff;
+                    text-align: left;
                 }
 
                 .fa-location-dot{
@@ -105,7 +111,8 @@
         }
 
         .footer-follow{
-            width: 33%;
+            width: 50%;
+            text-align: center;
 
             @include tablet{
                 width: 100%;
@@ -119,9 +126,12 @@
 
             .follow-title{
                 color: #fff;
+                text-align: center;
             }
 
             .follow-wrapper{
+                text-align: center;
+
                 .follow-item{
                     padding: 10px;
                 }

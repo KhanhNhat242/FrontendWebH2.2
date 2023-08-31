@@ -11,9 +11,14 @@
     top: 0;
     z-index: 1;
     display: flex;
+    padding: 0 10px !important;
 
     .navbar-toggler{
         background-color: $defaultColor;
+
+        @include mobile{
+            padding: 2px 5px;
+        }
     }
     
     .header-left{
@@ -25,7 +30,7 @@
             // height: 120px;
 
         @include mobile{
-            width: 60px;
+            width: 65px;
             height: 60px;
         }
         }
