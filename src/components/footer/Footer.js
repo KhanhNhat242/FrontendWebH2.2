@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 // import { Row, Col } from 'react-bootstrap'
-import logo from '../../assets/logoH22.png'
+// import logo from '../../assets/logoH22.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faGithub, faYoutube, faDiscord } from '@fortawesome/free-brands-svg-icons'
