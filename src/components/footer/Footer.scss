@@ -1,0 +1,151 @@
+@import '.././globalStyle/variables';
+@import '.././globalStyle/mixin';
+
+.container{
+    max-width: 100%;
+}
+
+.footer-wrapper{
+    background-color: $primary;
+    margin: 0;
+    padding: 40px;
+    width: 100%;
+    // font-family: serif;
+    // padding-top: 130px;
+
+    @include mobile{
+        padding: 20px;
+    }
+
+    // .footer-row1{
+    //     .footer-logo{
+    //         width: 120px;
+    //         height: 120px;
+    //         padding: 0;
+
+    //         @include mobile{
+    //             width: 60px;
+    //             height: 60px;
+    //         }
+    //     }
+    // }
+
+    .footer-row2{
+        padding: 0 180px;
+
+        .footer-tks{
+            width: 33%;
+
+            @include tablet{
+                width: 100%;
+                padding-top: 15px;
+            }
+
+            @include mobile{
+                width: 100%;
+                padding-top: 10px;
+            }
+
+            
+            .tks-txt{
+                color: #fff;
+                // font-size: 22px;
+            }
+            
+            .footer-logo{
+                width: 120px;
+                height: 120px;
+                padding: 0;
+    
+                @include mobile{
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+        }
+        
+        .footer-contact{
+            width: 50%;
+            text-align: center;
+
+            @include tablet{
+                width: 100%;
+                padding-top: 15px;
+            }
+
+            @include mobile{
+                width: 100%;
+                padding-top: 10px;
+            }
+
+            .contact-title{
+                color: #fff;
+            }
+
+            .location{
+                display: flex;
+
+                .location-txt{
+                    color: #fff;
+                    text-align: left;
+                }
+
+                .fa-location-dot{
+                    color: $defaultColor;
+                    padding: 5px;
+                }
+            }
+
+            .mail{
+                display: flex;
+
+                .mail-txt{
+                    color: #fff;
+                }
+                
+                .fa-envelope{
+                    color: $defaultColor;
+                    padding: 5px;
+                }
+            }
+        }
+
+        .footer-follow{
+            width: 50%;
+            text-align: center;
+
+            @include tablet{
+                width: 100%;
+                padding-top: 15px;
+            }
+
+            @include mobile{
+                width: 100%;
+                padding-top: 10px;
+            }
+
+            .follow-title{
+                color: #fff;
+                text-align: center;
+            }
+
+            .follow-wrapper{
+                text-align: center;
+
+                .follow-item{
+                    padding: 10px;
+                }
+            }
+        }
+    }
+
+    .line-horizon{
+        color: $defaultColor;
+        border: 1px solid $defaultColor;
+    }
+
+    .copyright-txt{
+        color: #fff;
+        text-align: center;
+    }
+}
