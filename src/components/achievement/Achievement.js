@@ -9,8 +9,11 @@ import achieve23 from '../../assets/achieve23.png'
 import achieve24 from '../../assets/achieve24.png'
 import achieve25 from '../../assets/achieve25.png'
 import achieve26 from '../../assets/achieve26.png'
+import AchieveNav from './achieveNav/AchieveNav'
 
 function Achievement() {
+    const typePaper = 0
+
     return ( 
         <>
             <div className='wrapper'>
@@ -19,21 +22,11 @@ function Achievement() {
             </div>
             <Container className='achieve-wrapper'>
                 <Row className='achieve-row'>
-                    <div className='col-lg-3 achieve-col-left'>
-                        <div className='btn-wrapper'>
-                            <a href='kkk' className='achieve-link'>
-                                <button className='achieve-btn'>Tổng quan</button>
-                            </a>
-                            <a href='kkk' className='achieve-link'>
-                                <button className='achieve-btn'>Bài báo nổi bật</button>
-                            </a>
-                            <a href='kkk' className='achieve-link'>
-                                <button className='achieve-btn'>Tất cả bài báo</button>
-                            </a>
-                        </div>
+                    <div className='col-lg-2 achieve-col-left'>
+                        {<AchieveNav typePaper={typePaper} />}
                     </div>
-                    <div className='col-lg-9 achieve-col-right'>
-                        <p className='achieve-txt'>Trải qua 3 năm thành lập và phát triển chúng tôi đã nỗi lực cố gắng tạo giá thật nhiều giá trị 
+                    <div className='col-lg-10 achieve-col-right'>
+                        <p className='achieve-txt'>Trải qua 3 năm thành lập và phát triển chúng mình đã nỗi lực cố gắng tạo giá thật nhiều giá trị 
                             cho cộng đồng với hàng chục bài báo được chấp nhận tại các hội nghị lớn, nhỏ hằng năm. Các 
                             hội nghị uy tín mà chúng tôi đã tham gia như YSC, FDSE, Euréka, ....</p>
                         <h3 className='paper-title'>Số lượng bài báo tương ứng với các cuộc thi</h3>
@@ -66,7 +59,10 @@ function Achievement() {
                             </Col>
                             <Col className='achieve-col1'>
                                 <img src={achieve25} alt='achieve25' className='achieve-img'/>
-                                <img src={achieve26} alt='achieve26' className='achieve-img'/>
+                                <img src={achieve26} alt='achieve26' className='achieve-img achieve-img2'/>
+                            </Col>
+                            <Col className='achieve-col2'>
+                                <img src={achieve26} alt='achieve26' className='achieve-img3'/>
                             </Col>
                         </Row>
                     </div>

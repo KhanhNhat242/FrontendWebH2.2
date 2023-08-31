@@ -1,0 +1,84 @@
+@import '../../globalStyle/mixin';
+@import '../../globalStyle/variables';
+
+.paper-wrapper{
+    background-color: $primary;
+    padding: 40px;
+    margin-top: 90px;
+
+    @include mobile{
+        padding: 10px;
+        // margin-top: -4px;
+    }
+
+    .paper-row{
+        padding: 20px;
+
+        @include tablet{
+            border-bottom: 1px solid #fff;
+        }
+
+        .paper-col-left{
+            border-right: 1px solid #fff;
+            // border-bottom: 1px solid #fff;
+
+            @include tablet{
+                border: none;
+            }
+
+            @include mobile{
+                border: none;
+                padding: 0;
+            }
+
+            .paper-title{
+                font-family: $defaultFont;
+                font-weight: 400;
+                font-size: 20px;
+                color: #fff;
+                margin: 0;
+                text-align: justify;
+            }
+
+            .paper-author{
+                font-family: $defaultFont;
+                font-weight: 200;
+                font-style: italic;
+                font-size: 13px;
+                color: #fff;
+                margin: 0;
+                text-align: justify;
+            }
+
+            .paper-abstract{
+                font-family: $defaultFont;
+                font-size: 14px;
+                color: #fff;
+                margin-top: 10px;
+                text-align: justify;
+            }
+
+            .paper-contest{
+                font-family: $defaultFont;
+                font-weight: bold;
+                color: #fff;
+                margin-top: 10px;
+            }
+        }
+
+        .paper-col-right{
+            // border-bottom: 1px solid #fff;
+
+            @include mobile{
+                padding: 0;
+            }
+
+            .paper-year{
+                font-family: $defaultFont;
+                font-weight: bold;
+                color: #fff;
+            }
+        }
+    }
+
+}

@@ -12,11 +12,11 @@ function Footer() {
             {/* <div className='footer-row1 row'>
             </div> */}
             <div className='footer-row2 row'>
-                <div className='footer-tks col-lg-3'>
+                {/* <div className='footer-tks col-lg-3'>
                     <h2 className='tks-txt'>Cảm ơn vì đã ghé thăm</h2>
                     <img src={logo} alt='logo' className='footer-logo' />
-                </div>
-                <div className='footer-contact col-lg-3'>
+                </div> */}
+                <div className='footer-contact col-lg-6'>
                     <h2 className='contact-title'>Liên hệ</h2>
                     <div className='location'>
                         <FontAwesomeIcon icon={faLocationDot}/>
@@ -27,7 +27,7 @@ function Footer() {
                         <p className='mail-txt'>aiclub.iuh@gmail.com</p>
                     </div>
                 </div>
-                <div className='footer-follow col-lg-3'>
+                <div className='footer-follow col-lg-6'>
                     <h3 className='follow-title'>Theo dõi chúng tôi</h3>
                     <div className='follow-wrapper'>
                         <a href='https://www.facebook.com/aiclub.iuh'className='follow-item'>

@@ -1,0 +1,35 @@
+@import '../../globalStyle//mixin';
+@import '../../globalStyle/variables';
+
+.btn-wrapper{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 95px;
+    
+    .achieve-link{
+        .achieve-btn{
+            background-color: $defaultColor;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            margin: 10px 0;
+            padding: 5px 0;
+            width: 100%;
+            font-size: $defaultFontSize;
+            font-family: $defaultFont;
+    
+            @include mobile{
+                font-size: $fontSizeMobile;
+            }
+    
+            &:hover{
+                // border: 1px solid #fff;
+                color: $primary;
+            }
+        }
+
+        .isActive{
+            color: $primary ;
+        }
+    }
+}

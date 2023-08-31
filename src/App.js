@@ -3,6 +3,9 @@ import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
 import Home from './components/home/Home'
 import Achievement from './components/achievement/Achievement'
+import TopPaper from './components/achievement/paper/TopPaper'
+import AllPaper from './components/achievement/paper/AllPaper'
+import Member from './components/member/Member'
 
 function App() {
   return (
@@ -12,7 +15,9 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />}></Route>
           <Route path='/achievement' element={<Achievement />}></Route>
-          <Route path='/member'></Route>
+          <Route path='/achievement/top-paper' element={<TopPaper />}></Route>
+          <Route path='/achievement/all-paper' element={<AllPaper />}></Route>
+          <Route path='/member' element={<Member />}></Route>
           <Route path='/wiki'></Route>
           <Route path='/event'></Route>
         </Routes>
