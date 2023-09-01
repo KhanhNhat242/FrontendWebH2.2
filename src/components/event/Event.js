@@ -7,7 +7,7 @@ import React from 'react'
 function Event () {
     return ( 
         <>
-            <Container className='achieve-wrapper'>
+            <Container className='achieve-wrapper custom-event-wrapper'>
                 <Row className='achieve-row'>
                     <div className='col-lg-2 achieve-col-left'>
                         <h2 className='title'>Sự Kiện</h2>
