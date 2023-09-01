@@ -6,22 +6,18 @@
     padding: 30px 16%;
     background-color: $primary;
 
-    .member-row1{
-        .role{
-            font-size: 55px;
-            font-family: $defaultFont;
-            font-weight: bold;
-            color: #fff;
-            text-align: center;
-        }
+    @include mobile{
+        padding: 30px 5%;
     }
 
-    .member-row2{
+    .member-row{
        .member-col1{
             position: relative;
-            display: flex;
-            justify-content: center;
             padding: 0 20px;
+
+            @include mobile{
+                padding: 10px 20px;
+            }
 
             .avt-wrapper{
                 .avt-link{
@@ -95,56 +91,162 @@
                 text-align: justify;
                 color: #fff;
             }
+
+            .role{
+                // font-size: 55px;
+                font-family: $defaultFont;
+                font-weight: bold;
+                color: #fff;
+                text-align: center;
+            }
        } 
 
+       .avt-mentor-wrapper{
+            display: flex;
+            justify-content: center;
+       }
     }
 }
 
 .member-detail-wrapper{
     background-color: $primary;
-    padding: 0;
+    padding: 30px 0;
 
     .member-detail-row{
-        padding: 0 8%;
+        padding: 30px 3.5%;
+        background-image: url('../../assets/backgroundMemberDetail.png');
+        background-repeat: no-repeat;
+        background-size: 100% 108%;
+        margin: 30px 12%;
 
-        .role{
-            font-size: 55px;
+        @include tablet{
+            margin: 30px 0;
+        }
+
+        @include mobile{
+            margin: 30px 2%;
+        }
+
+        .carousel-item-wrapper{
+            display: flex;
+
+            @include mobile{
+                display: block;
+            }
+        }
+
+        .member-detail-col{ 
+            .avt-member-wrapper{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                .avt-detail{
+                    border-radius: 30px;
+                    width: 200px;
+                    height: 300px;
+                }
+            }
+            
+            .member-name{
+                color: #fff;
+                font-size: 20px;
+                text-align: center;
+                margin-top: 15px;
+            }
+            
+            .role{
+                // font-size: 55px;
+                font-family: $defaultFont;
+                font-weight: bold;
+                color: #fff;
+                margin-left: 5%;
+
+                @include mobile{
+                    text-align: center;
+                    margin: 0;
+                }
+            }
+
+            .detail-member{
+                font-family: $defaultFont;
+                text-align: justify;
+                color: #fff;
+                padding-left: 3%;
+                margin: 60px 2% 0;
+
+                @include mobile{
+                    margin: 20px 0 0;
+                    padding: 0;
+                }
+            }
+    
+        }
+
+        .carousel{
+            .carousel-indicators{
+                margin-bottom: -3%;
+
+                @include mobile{
+                    margin-bottom: -8%;
+                }
+            }
+
+            .carousel-control-prev{
+                margin-left: -3%;
+                width: 6%;
+            }
+
+            .carousel-control-next{
+                margin-right: -3%;
+                width: 6%;
+            }
+        }
+    }
+    .alumni-row{
+        padding: 40px 20%;
+    
+        @include mobile{
+            margin: 0;
+        }
+
+        .alumni-title{
             font-family: $defaultFont;
             font-weight: bold;
             color: #fff;
             text-align: center;
+            padding: 20px 0;
         }
-
-        .member-detail-col{
-            .avt-detail{
-                border-radius: 30px;
+    
+        .avt-wrapper{
+            background-color: $primary;
+            padding: 5px 0;
+            // width: 100%;
+    
+            .img-wrapper{
+                display: flex;
+                justify-content: center;
+    
+                .avt-member{
+                    width: 200px;
+                    height: 300px;
+                    border-radius: 20px;
+                    cursor: pointer;
+                }
             }
-            
-            .detail-member{
-                font-family: $defaultFont;
-                font-size: $defaultFontSize;
-                text-align: justify;
+    
+            .member-name{
                 color: #fff;
-                padding-left: 3%;
+                font-size: 20px;
+                text-align: center;
+                margin-top: 15px;
             }
         }
-
     }
 }
 
-.carousel-wrapper{
-    background-color: #fff;
-    padding: 5px 0;
-    width: 100%;
-
-    .avt-wrapper{
-        display: flex;
-        justify-content: center;
-
-        .avt-member{
-            width: 75%;
-            border-radius: 50%;
-            cursor: pointer;
-        }
-    }
-}
+// .carousel-wrapper{
+//     background-color: $primary;
+//     padding: 5px 0;
+//     width: 100%;
+// }

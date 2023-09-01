@@ -33,6 +33,14 @@
     .footer-row2{
         padding: 0 180px;
 
+        @include tablet{
+            padding: 0 18%;
+        }
+
+        @include mobile{
+            padding: 0;
+        }
+
         .footer-tks{
             width: 33%;
 
