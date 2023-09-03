@@ -60,6 +60,71 @@
     }
 }
 
+.event-wrapper{
+    position: relative;
+
+    .background-event{
+        width: 100%;
+        height: 450px;
+    }
+
+    .event-title{
+        font-size: 55px;
+        font-weight: bold;
+        font-family: $defaultFont;
+        margin: 10px;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        left: 10%;
+
+        @include mobile{
+            font-size: 34px;
+        }
+    }
+
+    .carousel{
+        position: static;
+
+        .carousel-inner{
+            position: static;
+
+            .carousel-item{
+                position: static;
+
+                .event-name-wrapper{
+                    top: 40%;
+                    left: 10%;
+                    position: absolute;
+                    width: 39%;
+            
+                    .event-name{
+                        color: #fff;
+                        font-size: 25px;
+                        font-family: $defaultFont;
+                        font-weight: bold;
+                        text-align: justify;
+                    }
+                }
+            
+                .event-img{
+                    width: 40%;
+                    height: 70%;
+                    position: absolute;
+                    right: 10%;
+                    top: 10%;
+                    border-radius: 20px;
+
+                    @include tablet{
+                        top: 25%;
+                        height: 45%;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .mission-wrapper{
     .mission-row{
         padding: 40px;
@@ -279,62 +344,52 @@
 
     .spirit-row{
         padding: 40px;
-        background-color: $primary;
+        background-color: #ececec;
 
         @include mobile{
             padding: 20px;
         }
 
         .spirit-col{
-            .spirit-item{
-                background-color: $defaultColor;
-                width: 250px;
-                height: 130px;
-                // border-radius: 100px;
-                display: flex;
-                align-items: center;
-                margin: 0 24%;
+            background-color: #fff;
+            margin: 0 4%;
+            box-shadow: 5px 5px 18px #888888;
+            border-radius: 10px;
 
-                @include tablet{
-                    margin: 0;
+            @include tablet{
+                margin: 2%;
+                padding: 0;
+            }
+
+            @include mobile{
+                margin: 20px 5%;
+            }
+
+            .spirit-img-wrapper{
+                display: flex;
+                justify-content: center;
+
+                .spirit-img{
+                    width: 300px;
+                    height: 300px;
+    
+                    @include tablet{
+                        width: 100%;
+                        height: auto;
+                    }
                 }
+            }
+
+            .spirit-txt{
+                color: $primary;
+                font-size: 20px;
+                margin: 0;
+                padding: 0 40px 10px;
+                text-align: center;
 
                 @include mobile{
-                    margin: 5px 20%;
-                    width: 200px;
-                    height: 100px;
+                    font-size: $fontSizeMobile;
                 }
-
-                &:hover{
-                    border: 2px solid #fff;
-                    box-sizing: border-box;
-                }
-
-               .spirit-txt{
-                    color: $primary;
-                    font-size: 25px;
-                    margin: 0;
-                    padding: 30px;
-                    text-align: center;
-
-                    @include mobile{
-                        font-size: $fontSizeMobile;
-                    }
-               }
-            }
-
-            .spirit-br1{
-                border-top-left-radius: 100px;
-                border-bottom-right-radius: 100px;
-            }
-
-            .spirit-br2{
-                border-radius: 100px;
-            }
-
-            .spirit-br3{
-                border-top-right-radius: 100px;
-                border-bottom-left-radius: 100px;
             }
         }
     }

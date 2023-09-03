@@ -5,16 +5,38 @@ import { Container, Row, Col } from 'react-bootstrap'
 import home21 from '../../assets/home21.png'
 import home31 from '../../assets/image_home_31.png'
 import home32 from '../../assets/image_home_32.png'
-import home41 from '../../assets/image_home_41.png'
+// import home41 from '../../assets/image_home_41.png'
+import sprit1 from '../../assets/spirit1.png'
+import sprit2 from '../../assets/spirit2.png'
+import sprit3 from '../../assets/spirit3.png'
+import backgroundEvent from '../../assets/backgroundEvent.png'
+import {Carousel} from 'react-bootstrap'
 
-function Home() {
+function Home({ events }) {
+
+    console.log(events);
+
     return ( 
         <>
             <div className="home-wrapper">
-                <img src={title} alt="AI-CLUB" className="h2-title"/>
                 <img src={backgroundimg} alt="background-img" className='background-img' />
+                <img src={title} alt="AI-CLUB" className="h2-title"/>
                 <p className='ai-club-txt'>Câu lạc bộ Trí tuệ Nhân tạo là nơi dành cho sinh viên Công nghệ thông tin IUH học tập và 
                     nghiên cứu về trí tuệ nhân tạo</p>
+            </div>
+            <div className='event-wrapper'>
+                <img src={backgroundEvent} alt='background-event' className='background-event' />
+                <h3 className='event-title'>Sự Kiện Sắp Tới</h3>
+                <Carousel>
+                    {events.map((ev) => (
+                        <Carousel.Item interval={10000000}>
+                            <div className='event-name-wrapper'>
+                                <h3 className='event-name'>{ev.name_event}</h3>
+                            </div>
+                            <img src={`${ev.image_avatar}`} alt='event-img' className='event-img' />
+                        </Carousel.Item>
+                    ))}
+                </Carousel>
             </div>
             <Container className='mission-wrapper'>
                 <Row className='mission-row'>
@@ -59,24 +81,27 @@ function Home() {
                 </Row>
                 <Row className='spirit-row'>
                     <Col className='spirit-col'>
-                        <div className='spirit-item spirit-br1'>
-                            <p className='spirit-txt'>Một tập thể đoàn kết hỗ trợ lẫn nhau</p>
+                        <div className='spirit-img-wrapper'>
+                            <img src={sprit1} alt='spirit-img' className='spirit-img' />
                         </div>
+                        <p className='spirit-txt'>Một tập thể đoàn kết hỗ trợ lẫn nhau</p>
                     </Col>
                     <Col className='spirit-col'>
-                        <div className='spirit-item spirit-br2'>
-                            <p className='spirit-txt'>Tôn trọng và thấu hiểu nhau</p>
+                        <div className='spirit-img-wrapper'>
+                            <img src={sprit2} alt='spirit-img' className='spirit-img' />
                         </div>
+                        <p className='spirit-txt'>Tôn trọng và thấu hiểu nhau</p>
                     </Col>
                     <Col className='spirit-col'>
-                        <div className='spirit-item spirit-br3'>
-                            <p className='spirit-txt'> Kết nối sinh viên tài năng để  tạo nên giá trị thực</p>
+                        <div className='spirit-img-wrapper'>
+                            <img src={sprit3} alt='spirit-img' className='spirit-img' />
                         </div>
+                        <p className='spirit-txt'> Kết nối sinh viên tài năng để  tạo nên giá trị thực</p>
                     </Col>
                 </Row>
-                <Row>
+                {/* <Row>
                     <img src={home41} alt='home41' style={{padding: 0}} />
-                </Row>
+                </Row> */}
             </Container>
         </>
      );
