@@ -3,7 +3,9 @@ import { Container, Row, Col } from 'react-bootstrap'
 import React from 'react'
 import background from '../../assets/event-2.jpg'
 
-function EventDetail () {
+function EventDetail ({ typePage }) {
+
+    typePage = 4
 
     const richText = `
     This is a <strong>rich text</strong> paragraph with <em>different</em> styles.

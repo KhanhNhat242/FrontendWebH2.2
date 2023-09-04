@@ -17,8 +17,6 @@ import {motion} from 'framer-motion'
 
 function Home({ events }) {
 
-  
-
     return ( 
         <>
             <div className="home-wrapper">
@@ -45,7 +43,7 @@ function Home({ events }) {
                 <h3 className='event-title'>Sự Kiện Sắp Tới</h3>
                 <Carousel>
                     {events.map((ev) => (
-                        <Carousel.Item interval={10000000}>
+                        <Carousel.Item interval={10000000} key={ev.id_event}>
                             <div className='event-name-wrapper'>
                                 <h3 className='event-name'>{ev.name_event}</h3>
                             </div>
