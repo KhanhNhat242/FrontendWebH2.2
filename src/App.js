@@ -28,8 +28,20 @@ function App() {
     }
   }
 
+  const getEvent = async () => {
+    try {
+      const res = await axios.get('https://raw.githubusercontent.com/KhanhNhat242/APIH22Fake/main/event_data.json')
+      // console.log(res.data)
+      setEvent(res.data)
+    }
+    catch(err) {
+      console.log(err)
+    }
+  }
+
   useEffect(() => {
     getMembers()
+    getEvent()
   }, [])
 
   return (
@@ -43,8 +55,8 @@ function App() {
           <Route path='/achievement/all-paper' element={<AllPaper />}></Route>
           <Route path='/member' element={<Member members={members} />}></Route>
           <Route path='/wiki'></Route>
-          <Route path='/event' element={<Event/>}></Route>
-          <Route path='/event/:id' element={<EventDetail/>}></Route>
+          <Route path='/event' element={<Event events = {events}/>}></Route>
+          <Route path='/event/:id_event' element={<EventDetail/>}></Route>
         </Routes>
       </Router>
       <Footer />      

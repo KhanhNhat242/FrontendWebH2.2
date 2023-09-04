@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faGithub, faYoutube, faDiscord } from '@fortawesome/free-brands-svg-icons'
 import './Footer.scss'
+import {motion} from 'framer-motion'
 
 function Footer() {
     return ( 
@@ -19,27 +20,27 @@ function Footer() {
                 <div className='footer-contact col-lg-6'>
                     <h2 className='contact-title'>Liên hệ</h2>
                     <div className='location'>
-                        <FontAwesomeIcon icon={faLocationDot}/>
+                        <FontAwesomeIcon icon={faLocationDot}  style={{color : "red"}}/>
                         <p className='location-txt'>12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, thành phố Hồ Chí Minh, Việt Nam - Phòng H2.2</p>
                     </div>
                     <div className='mail'>
-                        <FontAwesomeIcon icon={faEnvelope}/>
+                        <FontAwesomeIcon icon={faEnvelope} style={{color : "white"}}/>
                         <p className='mail-txt'>aiclub.iuh@gmail.com</p>
                     </div>
                 </div>
                 <div className='footer-follow col-lg-6'>
                     <h3 className='follow-title'>Theo dõi chúng tôi</h3>
                     <div className='follow-wrapper'>
-                        <a href='https://www.facebook.com/aiclub.iuh'className='follow-item'>
+                        <a href='https://www.facebook.com/aiclub.iuh'className='follow-item' style={{color : "#1877F2"}}>
                             <FontAwesomeIcon icon={faFacebook}/>
                         </a>
-                        <a href='https://www.youtube.com/channel/UCXwozkprKeqF9qstragkIIw' className='follow-item'>
+                        <a href='https://www.youtube.com/channel/UCXwozkprKeqF9qstragkIIw' className='follow-item' style={{color : "red"}}>
                             <FontAwesomeIcon icon={faYoutube}/>
                         </a>
-                        <a href='https://discord.gg/fJJbM8RJ' className='follow-item'>
+                        <a href='https://discord.gg/fJJbM8RJ' className='follow-item' style={{color : "#5865F2"}}>
                             <FontAwesomeIcon icon={faDiscord}/>
                         </a>
-                        <a href='https://github.com/AI-CLUB-IUH' className='follow-item'>
+                        <a href='https://github.com/AI-CLUB-IUH' className='follow-item' style={{color : "#181717"}}>
                             <FontAwesomeIcon icon={faGithub}/>
                         </a>
                     </div>

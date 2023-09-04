@@ -5,24 +5,40 @@ import { Container, Row, Col } from 'react-bootstrap'
 import home21 from '../../assets/home21.png'
 import home31 from '../../assets/image_home_31.png'
 import home32 from '../../assets/image_home_32.png'
-// import home41 from '../../assets/image_home_41.png'
+import home41 from '../../assets/image_home_41.png'
 import sprit1 from '../../assets/spirit1.png'
 import sprit2 from '../../assets/spirit2.png'
 import sprit3 from '../../assets/spirit3.png'
 import backgroundEvent from '../../assets/backgroundEvent.png'
+// import home41 from '../../assets/image_home_41.png'
 import {Carousel} from 'react-bootstrap'
+import {motion} from 'framer-motion'
+
 
 function Home({ events }) {
 
-    console.log(events);
+  
 
     return ( 
         <>
             <div className="home-wrapper">
-                <img src={backgroundimg} alt="background-img" className='background-img' />
-                <img src={title} alt="AI-CLUB" className="h2-title"/>
-                <p className='ai-club-txt'>Câu lạc bộ Trí tuệ Nhân tạo là nơi dành cho sinh viên Công nghệ thông tin IUH học tập và 
-                    nghiên cứu về trí tuệ nhân tạo</p>
+                <motion.img src={title} alt="AI-CLUB" className="h2-title"
+                    initial={{x : "-50%", scale: 1.5,y: -100, opacity: 0}}
+                    whileInView={{x : "-50%", scale: 1,y: 0, opacity: 1}}
+                    transition={{delay: 0.3, duration: 1, type: 'Tween', stiffness: 140}}
+                />
+                <motion.img src={backgroundimg} alt="background-img" className='background-img' 
+                    initial={{y: 100, opacity: 0}}
+                    animate={{y:0, opacity: 1}}
+                    transition={{delay: 0.6, duration: 1, type: 'Tween', stiffness: 150}}
+                />
+                <motion.p className='ai-club-txt'
+                    initial={{y: 300, scale: 0.1,opacity: 0}}
+                    animate={{y:0, x: "-50%", scale: 1,opacity: 1}}
+                    transition={{delay: 0.6, duration: 5, type: 'spring', stiffness: 120}}
+                >
+                    Câu lạc bộ Trí tuệ Nhân tạo là nơi dành cho sinh viên Công nghệ thông tin IUH học tập và nghiên cứu về trí tuệ nhân tạo
+                </motion.p>
             </div>
             <div className='event-wrapper'>
                 <img src={backgroundEvent} alt='background-event' className='background-event' />

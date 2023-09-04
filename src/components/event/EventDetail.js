@@ -26,7 +26,7 @@ function EventDetail () {
                         <div dangerouslySetInnerHTML={{ __html: richText }} />
                     </div>
                     <div className='wrap-btn-apply'> 
-                        <button className='btn btn-primary btn-back'>Apply</button> 
+                        <button className='btn btn-primary btn-back'>Tham gia</button> 
                     </div>
                 </div>
             </Container>

@@ -9,15 +9,17 @@
     // float: right;
     position: fixed !important;
     top: 0;
-    z-index: 1;
+    z-index: 9;
     display: flex;
-    padding: 0 10px !important;
+    padding: 0 15px !important;
 
     .navbar-toggler{
         background-color: $defaultColor;
-
+        width: 25px;
+        height: 25px;
+        font-size: 10px;
         @include mobile{
-            padding: 2px 5px;
+            padding: 2px;
         }
     }
     

@@ -113,12 +113,14 @@
     padding: 30px 0;
 
     .member-detail-row{
-        padding: 30px 3.5%;
-        background-image: url('../../assets/backgroundMemberDetail.png');
+        padding: 30px 3%;
+        background-image: url('../../assets/member_background-min.png');
+        // background-color: rgba(139, 139, 139, 0.2);
         background-repeat: no-repeat;
-        background-size: 100% 108%;
+        background-size: 100% 100%;
         margin: 30px 12%;
-
+        object-fit: cover;
+        border-radius: 1rem;
         @include tablet{
             margin: 30px 0;
         }
@@ -129,9 +131,12 @@
 
         .carousel-item-wrapper{
             display: flex;
-
+            background: linear-gradient(300deg, rgba(200, 200, 200, 0.70) 0%, rgba(0, 0, 0, 0.40) 100%), rgba(255, 255, 255, 0.70);
+            padding: 20px;
+            border-radius: 30px;
             @include mobile{
                 display: block;
+                background: linear-gradient(190deg, rgba(200, 200, 200, 0.70) 0%, rgba(0, 0, 0, 0.40) 100%), rgba(255, 255, 255, 0.70);
             }
         }
 
@@ -193,22 +198,21 @@
             }
 
             .carousel-control-prev{
-                margin-left: -3%;
+                margin-left: -1.5%;
                 width: 6%;
             }
 
             .carousel-control-next{
-                margin-right: -3%;
+                margin-right: -1.5%;
                 width: 6%;
             }
         }
     }
     .alumni-row{
         padding: 40px 20%;
-    
-        @include mobile{
-            margin: 0;
-        }
+        justify-content: center;
+        width: 100%;
+       
 
         .alumni-title{
             font-family: $defaultFont;
@@ -240,6 +244,19 @@
                 font-size: 20px;
                 text-align: center;
                 margin-top: 15px;
+            }
+        }
+        @include mobile{
+            margin: 0;
+            padding: 0;
+            .avt-wrapper{
+                
+                .img-wrapper{
+                    .avt-member{
+                        width: 150px;
+                        height: 200px;
+                    }
+                }                
             }
         }
     }
