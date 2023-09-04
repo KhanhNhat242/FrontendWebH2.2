@@ -239,6 +239,7 @@
         @include mobile{
             padding: 5px;
             height: 1020px;
+            flex-direction: column-reverse;
         }
     
         .math-col1{

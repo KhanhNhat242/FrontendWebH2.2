@@ -55,62 +55,134 @@ function Home({ events }) {
             <Container className='mission-wrapper'>
                 <Row className='mission-row'>
                     <div className='col-lg-6 mission-col1'>
-                        <h1 className='mission-title'>AI CLUB và sứ mệnh</h1>
+                        <motion.h1 className='mission-title'
+                            initial={{x: -50,y : -50,  opacity: 0}}
+                            whileInView={{x: 0, y : 0,  opacity: 1}}
+                            transition={{delay: 0.2, duration: 0.5, type: 'spring', stiffness: 150}}
+                        >AI CLUB và sứ mệnh</motion.h1>
                         <div className='mission-detail'>
-                            <p className='detail-txt'>Chúng tôi là câu lạc bộ Trí tuệ Nhân Tạo của Khoa Công nghệ thông tin IUH.</p>
-                            <p className='detail-txt'>Chúng tôi tạo ra môi trường học tập và nghiên cứu để sinh viên Công nghệ 
+                            <motion.p className='detail-txt'
+                                initial={{y: -30,x : -60,  opacity: 0}}
+                                whileInView={{x: 0, y : 0,  opacity: 1}}
+                                transition={{delay: 0.3, duration: 0.5, type: 'spring', stiffness: 120}}
+                            >Chúng tôi là câu lạc bộ Trí tuệ Nhân Tạo của Khoa Công nghệ thông tin IUH.</motion.p>
+                            <motion.p className='detail-txt'
+                                initial={{y: -30,x : -60,  opacity: 0}}
+                                whileInView={{x: 0, y : 0,  opacity: 1}}
+                                transition={{delay: 0.4, duration: 0.5, type: 'spring', stiffness: 120}}
+                            >Chúng tôi tạo ra môi trường học tập và nghiên cứu để sinh viên Công nghệ 
                                 thông tin IUH thực hiện các dự án nghiên cứu với sự giúp đỡ của các anh 
                                 chị hướng dẫn. Các bạn sinh viên khi đến với AI CLUB đều được trang bị 
                                 các kiến thức nền tảng về khoa học dữ liệu, trí tuệ nhân tạo, học máy 
-                                thông qua các khóa học do câu lạc bộ tổ chức.</p>
-                            <p className='detail-txt'>Tạo ra các bài báo nghiên cứu khoa học chất lượng.</p>
-                            <p className='detail-txt'>Thúc đẩy tinh thần sinh viên Công nghệ thông tin 
-                            tham gia nghiên cứu khoa học ở các cấp</p>
+                                thông qua các khóa học do câu lạc bộ tổ chức.</motion.p>
+                            <motion.p className='detail-txt'
+                                initial={{y: -30,x : -60,  opacity: 0}}
+                                whileInView={{x: 0, y : 0,  opacity: 1}}
+                                transition={{delay: 0.5, duration: 0.5, type: 'spring', stiffness: 120}}
+                            >Tạo ra các bài báo nghiên cứu khoa học chất lượng.</motion.p>
+                            <motion.p className='detail-txt'
+                                initial={{y: -30,x : -60,  opacity: 0}}
+                                whileInView={{x: 0, y : 0,  opacity: 1}}
+                                transition={{delay: 0.6, duration: 0.5, type: 'spring', stiffness: 120}}
+                            >Thúc đẩy tinh thần sinh viên Công nghệ thông tin 
+                            tham gia nghiên cứu khoa học ở các cấp</motion.p>
                         </div>
                     </div>
                     <div className='col-lg-6 mission-col2'>'
-                        <img src={home21} alt='home21' className='home21-img'/>
+                        <motion.img src={home21} alt='home21' className='home21-img'
+                            initial={{x: -100,y : -100,  opacity: 0}}
+                            whileInView={{x: 0, y : 0,  opacity: 1}}
+                            transition={{delay: 0.3, duration: 0.85, type: 'tween', stiffness: 150}}
+                        />
                     </div>
                 </Row>
                 <Row className='math-row'>
                     <Col className='math-col1'>
                         <div className='img-wrapper'>
-                            <img src={home31} alt='home31' className='home31-img'/>
+                            <motion.img src={home31} alt='home31' className='home31-img'
+                                initial={{x: -100,y : -100,  opacity: 0}}
+                                whileInView={{x: 0, y : 0,  opacity: 1}}
+                                transition={{delay: 0.25, duration: 0.85, type: 'tween'}}
+                            />
                         </div>
                         <div className='img-wrapper'>
-                            <img src={home32} alt='home32' className='home32-img'/>
+                            <motion.img src={home32} alt='home32' className='home32-img'
+                                initial={{x: -100,y : -100,  opacity: 0}}
+                                whileInView={{x: 0, y : 0,  opacity: 1}}
+                                transition={{delay: 0.35, duration: 0.85, type: 'tween'}}
+                            />
                         </div>
                     </Col>
                     <Col className='math-col2'>
-                        <h1 className='math-title'>Về Toán Học</h1>
+                        <motion.h1 className='math-title'
+                            initial={{x: -50,y : -50,  opacity: 0}}
+                            whileInView={{x: 0, y : 0,  opacity: 1}}
+                            transition={{delay: 0.2, duration: 0.5, type: 'spring', stiffness: 150}}
+                        >Về Toán Học</motion.h1>
                         <div className='math-detail'>
-                            <p className='detail-txt'>Toán học là một phần không thể thiếu trong trí tuệ nhân tạo. Chính vì vậy, 
-                                chúng tôi có các thành viên ở trong đội tuyển olympic toán sinh viên của trường.</p>
-                            <p className='detail-txt'>Trong các năm tham gia olympic toán sinh viên toàn quốc, các thành viên của AI CLUB 
-                                đã đạt được các thành tích đáng nể như 2 giải nhì, và 15 giải ba.</p>
-                            <p className='detail-txt'>Để thúc đẩy niềm đam mê toán học, hàng năm chúng tôi đều tạo điều kiện cho các thành
-                                viên tham dự kỳ thi olympic Toán.</p>
+                            <motion.p className='detail-txt'
+                                initial={{y: -30,x : -60,  opacity: 0}}
+                                whileInView={{x: 0, y : 0,  opacity: 1}}
+                                transition={{delay: 0.3, duration: 0.5, type: 'spring', stiffness: 120}}
+                            >Toán học là một phần không thể thiếu trong trí tuệ nhân tạo. Chính vì vậy, 
+                                chúng tôi có các thành viên ở trong đội tuyển olympic toán sinh viên của trường.</motion.p>
+                            <motion.p className='detail-txt'
+                                initial={{y: -30,x : -60,  opacity: 0}}
+                                whileInView={{x: 0, y : 0,  opacity: 1}}
+                                transition={{delay: 0.4, duration: 0.5, type: 'spring', stiffness: 120}}
+                            >Trong các năm tham gia olympic toán sinh viên toàn quốc, các thành viên của AI CLUB 
+                                đã đạt được các thành tích đáng nể như 2 giải nhì, và 15 giải ba.</motion.p>
+                            <motion.p className='detail-txt'
+                                initial={{y: -30,x : -60,  opacity: 0}}
+                                whileInView={{x: 0, y : 0,  opacity: 1}}
+                                transition={{delay: 0.5, duration: 0.5, type: 'spring', stiffness: 120}}
+                            >Để thúc đẩy niềm đam mê toán học, hàng năm chúng tôi đều tạo điều kiện cho các thành
+                                viên tham dự kỳ thi olympic Toán.</motion.p>
                         </div>
                     </Col>
                 </Row>
                 <Row className='spirit-row'>
                     <Col className='spirit-col'>
                         <div className='spirit-img-wrapper'>
-                            <img src={sprit1} alt='spirit-img' className='spirit-img' />
+                            <motion.img src={sprit1} alt='spirit-img' className='spirit-img' 
+                                initial={{ scale : 0.1,opacity: 0}}
+                                whileInView={{  scale : 1,opacity: 1}}
+                                transition={{delay: 0.3, duration: 0.5, type: 'tween'}}
+                            />
                         </div>
-                        <p className='spirit-txt'>Một tập thể đoàn kết hỗ trợ lẫn nhau</p>
+                        <motion.p className='spirit-txt'
+                             initial={{x: -50,y : -50,  opacity: 0}}
+                             whileInView={{x: 0, y : 0,  opacity: 1}}
+                             transition={{delay: 0.2, duration: 0.5, type: 'spring', stiffness: 150}}
+                        >Một tập thể đoàn kết hỗ trợ lẫn nhau</motion.p>
                     </Col>
                     <Col className='spirit-col'>
                         <div className='spirit-img-wrapper'>
-                            <img src={sprit2} alt='spirit-img' className='spirit-img' />
+                            <motion.img src={sprit2} alt='spirit-img' className='spirit-img' 
+                                initial={{ scale : 0.1,opacity: 0}}
+                                whileInView={{  scale : 1,opacity: 1}}
+                                transition={{delay: 0.3, duration: 0.5, type: 'tween'}}
+                            />
                         </div>
-                        <p className='spirit-txt'>Tôn trọng và thấu hiểu nhau</p>
+                        <motion.p className='spirit-txt'
+                             initial={{x: -50,y : -50,  opacity: 0}}
+                             whileInView={{x: 0, y : 0,  opacity: 1}}
+                             transition={{delay: 0.2, duration: 0.5, type: 'spring', stiffness: 150}}
+                        >Tôn trọng và thấu hiểu nhau</motion.p>
                     </Col>
                     <Col className='spirit-col'>
                         <div className='spirit-img-wrapper'>
-                            <img src={sprit3} alt='spirit-img' className='spirit-img' />
+                            <motion.img src={sprit3} alt='spirit-img' className='spirit-img' 
+                                initial={{ scale : 0.1,opacity: 0}}
+                                whileInView={{  scale : 1,opacity: 1}}
+                                transition={{delay: 0.3, duration: 0.5, type: 'tween'}}
+                            />
                         </div>
-                        <p className='spirit-txt'> Kết nối sinh viên tài năng để  tạo nên giá trị thực</p>
+                        <motion.p className='spirit-txt'
+                             initial={{x: -50,y : -50,  opacity: 0}}
+                             whileInView={{x: 0, y : 0,  opacity: 1}}
+                             transition={{delay: 0.2, duration: 0.5, type: 'spring', stiffness: 150}}
+                        > Kết nối sinh viên tài năng để  tạo nên giá trị thực</motion.p>
                     </Col>
                 </Row>
                 {/* <Row>
