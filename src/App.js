@@ -13,13 +13,15 @@ import axios from 'axios'
 
 function App() {
   const [members, setMember] = useState([])
-  const [events, setEvent] = useState([])
+  const [events, setEvents] = useState([])
 
   const getMembers = async () => {
     try {
-      const res = await axios.get('https://raw.githubusercontent.com/KhanhNhat242/APIH22Fake/main/infor_member.json')
+      const res1 = await axios.get('https://raw.githubusercontent.com/KhanhNhat242/APIH22Fake/main/infor_member.json')
+      const res2 = await axios.get('https://raw.githubusercontent.com/KhanhNhat242/APIH22Fake/main/event_data.json')
       // console.log(res.data)
-      setMember(res.data)
+      setMember(res1.data)
+      setEvents(res2.data)
     }
     catch(err) {
       console.log(err)
@@ -47,7 +49,7 @@ function App() {
       <Header />
       <Router>
         <Routes>
-          <Route path='/' element={<Home />}></Route>
+          <Route path='/' element={<Home events={events} />}></Route>
           <Route path='/achievement' element={<Achievement />}></Route>
           <Route path='/achievement/top-paper' element={<TopPaper />}></Route>
           <Route path='/achievement/all-paper' element={<AllPaper />}></Route>

@@ -2,9 +2,9 @@ import './Member.scss'
 import { Container, Row, Col } from 'react-bootstrap'
 import MrTinh from '../../assets/MrTinh.png'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Carousel from 'react-multi-carousel';
+// import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css'; 
-import responsive from '../globalStyle/ResponsiveCarousel'
+// import responsive from '../globalStyle/ResponsiveCarousel'
 import {Carousel as Carousel1} from 'react-bootstrap';
 import {motion} from 'framer-motion'
 
