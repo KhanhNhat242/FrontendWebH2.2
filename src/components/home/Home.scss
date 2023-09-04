@@ -57,6 +57,7 @@
         font-size: 18px;
         width: 82%;
         top: 40%;
+        transform: translateX(-50%) translateY(16px) scale(1) translateZ(0px);
     }
 }
 
@@ -66,6 +67,10 @@
     .background-event{
         width: 100%;
         height: 450px;
+
+        @include mobile{
+            height: 230px;
+        }
     }
 
     .event-title{
@@ -104,6 +109,10 @@
                         font-family: $defaultFont;
                         font-weight: bold;
                         text-align: justify;
+
+                        @include mobile{
+                            font-size: 20px;
+                        }
                     }
                 }
             
@@ -118,6 +127,13 @@
                     @include tablet{
                         top: 25%;
                         height: 45%;
+                    }
+
+                    @include mobile{
+                        width: 35%;
+                        height: 40%;
+                        right: 7%;
+                        top: 32%;
                     }
                 }
             }

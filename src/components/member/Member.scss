@@ -2,8 +2,8 @@
 @import '.././globalStyle/mixin';
 
 .member-wrapper{
-    margin-top: 57px;
-    padding: 30px 16%;
+    margin-top: 77px;
+    padding: 60px 16%;
     background-color: $primary;
 
     @include mobile{
@@ -150,6 +150,10 @@
                     border-radius: 30px;
                     width: 200px;
                     height: 300px;
+
+                    &:hover{
+                        border: 5px solid $defaultColor;
+                    }
                 }
             }
             
@@ -236,6 +240,10 @@
                     height: 300px;
                     border-radius: 20px;
                     cursor: pointer;
+
+                    &:hover{
+                        border: 5px solid $defaultColor;
+                    }
                 }
             }
     

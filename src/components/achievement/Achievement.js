@@ -11,7 +11,7 @@ import achieve25 from '../../assets/achieve25.png'
 import achieve26 from '../../assets/achieve26.png'
 import AchieveNav from './achieveNav/AchieveNav'
 
-function Achievement() {
+function Achievement(){
     const typePaper = 0
 
     return ( 

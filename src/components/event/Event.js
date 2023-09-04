@@ -4,9 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap'
 import React from 'react'
 import { motion } from 'framer-motion'
 
-
-
-function Event ({events}) {
+function Event ({ events }) {
 
     const handleNavigate = (id_event) => {
         window.location.href = `/event/${id_event}`
