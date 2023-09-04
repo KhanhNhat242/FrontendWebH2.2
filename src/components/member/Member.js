@@ -17,9 +17,9 @@ function Member({ members }) {
                 <Row className='member-row'>
                     <div className='col-lg-4 member-col1 avt-mentor-wrapper'>
                         <motion.div className='avt-wrapper'
-                            initial={{ x: -500, y : -500, opacity: 0}}
+                            initial={{ x: -100, y : -100, opacity: 0}}
                             animate= {{ x: 0, y : 0, opacity: 1}} 
-                            transition={{duration: 1, delay: 0.3, type: "spring", stiffness: 120}}
+                            transition={{duration: 2, delay: 0.3, type: "tween", stiffness: 120}}
                             >
                             <a href='/member' className='avt-link'>
                                 <img src={MrTinh} alt='avt' className='avt-mentor' />
@@ -84,7 +84,7 @@ function Member({ members }) {
                                     <motion.div className='img-wrapper'
                                         initial={{x: 0, y : 50, opacity: 0 }}
                                         whileInView={{x: 0, y : 0, opacity: 1 }}
-                                        transition={{duration: 1, delay: 0.3, type: "spring", stiffness: 120}}
+                                        transition={{duration: 1, delay: 0.3, type: "tween", stiffness: 120}}
 
                                     >
                                         <img src={`${m.image}`} alt='avt' className='avt-member' />

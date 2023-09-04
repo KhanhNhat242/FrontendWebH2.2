@@ -21,6 +21,9 @@
         @include mobile{
             padding: 2px;
         }
+        @include tablet {
+            width: 40px;
+        }
     }
     
     .header-left{
@@ -32,7 +35,7 @@
             // height: 120px;
 
         @include mobile{
-            width: 65px;
+            width: 80px;
             height: 60px;
         }
         }
