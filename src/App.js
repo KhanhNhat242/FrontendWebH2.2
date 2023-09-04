@@ -28,20 +28,8 @@ function App() {
     }
   }
 
-  const getEvent = async () => {
-    try {
-      const res = await axios.get('https://raw.githubusercontent.com/KhanhNhat242/APIH22Fake/main/event_data.json')
-      // console.log(res.data)
-      setEvent(res.data)
-    }
-    catch(err) {
-      console.log(err)
-    }
-  }
-
   useEffect(() => {
     getMembers()
-    getEvent()
   }, [])
 
   return (
