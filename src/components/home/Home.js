@@ -17,8 +17,6 @@ import {motion} from 'framer-motion'
 
 function Home({ events }) {
 
-  
-
     return ( 
         <>
             <div className="home-wrapper">
@@ -44,8 +42,8 @@ function Home({ events }) {
                 <img src={backgroundEvent} alt='background-event' className='background-event' />
                 <h3 className='event-title'>Sự Kiện Sắp Tới</h3>
                 <Carousel>
-                    {events.map((ev, index) => (
-                        <Carousel.Item interval={10000000} key={index}>
+                    {events.map((ev) => (
+                        <Carousel.Item interval={10000000} key={ev.id_event}>
                             <div className='event-name-wrapper'>
                                 <h3 className='event-name'>{ev.name_event}</h3>
                             </div>

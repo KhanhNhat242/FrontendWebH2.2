@@ -8,8 +8,10 @@ import 'react-multi-carousel/lib/styles.css';
 import {Carousel as Carousel1} from 'react-bootstrap';
 import {motion} from 'framer-motion'
 
-function Member({ members }) {
+function Member({ members, typePage }) {
     // console.log(members);
+
+    typePage = 4
 
     return ( 
         <>
@@ -43,8 +45,11 @@ function Member({ members }) {
                         <motion.p className='detail'
                             initial={{  opacity: 0}}
                             whileInView= {{ x: 0, y : 0, opacity: 1}} 
-                            transition={{duration: 1, delay: 0.3, type: "spring", stiffness: 120}}
-                        >Giảng viên trường đại học Công Nghiệp TP.HCM.Trên 10 năm kinh nghiệm dẫn dắt đội tuyển olympic.</motion.p>
+                            transition={{duration: 1, delay: 0.3, type: "spring", stiffness: 120}}>
+                            Thầy Nguyễn Hữu Tình Giảng viên trường ĐHCN TP.HCM 2 với 5 năm kinh nghiệm giảng dạy, 13 năm kinh nghiệm dẫn dắt đội tuyển Olympic 
+                            Tin học ĐHCN TP HCM. Dưới sự hướng dẫn và tư duy sâu sắc của thầy, đội tuyển đã ghi dấu ấn với nhiều huy chương và giải 
+                            thưởng Quốc gia, Quốc tế trong các cuộc thi Olympic Thầy là một nguồn cảm hứng và thắp sáng ước mơ của nhiều thế hệ sinh 
+                            viên tại trường.</motion.p>
                     </div>
                 </Row>
             </Container>

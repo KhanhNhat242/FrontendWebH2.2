@@ -13,7 +13,7 @@ import AchieveNav from './achieveNav/AchieveNav'
 import {motion} from 'framer-motion'
 
 
-function Achievement() {
+function Achievement(){
     const typePaper = 0
 
 

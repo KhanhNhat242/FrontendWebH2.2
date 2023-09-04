@@ -12,10 +12,11 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 
 function App() {
+
   const [members, setMember] = useState([])
   const [events, setEvents] = useState([])
 
-  const getMembers = async () => {
+  const getData = async () => {
     try {
       const res1 = await axios.get('https://raw.githubusercontent.com/KhanhNhat242/APIH22Fake/main/infor_member.json')
       const res2 = await axios.get('https://raw.githubusercontent.com/KhanhNhat242/APIH22Fake/main/event_data.json')
@@ -29,13 +30,13 @@ function App() {
   }
 
   useEffect(() => {
-    getMembers()
+    getData()
   }, [])
 
   return (
     <div className="App">
-      <Header />
       <Router>
+      <Header />
         <Routes>
           <Route path='/' element={<Home events={events} />}></Route>
           <Route path='/achievement' element={<Achievement />}></Route>
@@ -46,8 +47,8 @@ function App() {
           <Route path='/event' element={<Event events = {events}/>}></Route>
           <Route path='/event/:id_event' element={<EventDetail/>}></Route>
         </Routes>
-      </Router>
       <Footer />      
+      </Router>
     </div>
   );
 }
