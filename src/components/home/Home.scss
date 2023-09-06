@@ -123,6 +123,7 @@
 
                         @include mobile{
                             font-size: 17px;
+                            margin: -5px 10px 10px;
                         }
                     }
                 }
@@ -384,6 +385,7 @@
             margin: 0 4%;
             box-shadow: 5px 5px 18px #888888;
             border-radius: 10px;
+            overflow: hidden;
 
             @include tablet{
                 margin: 2%;

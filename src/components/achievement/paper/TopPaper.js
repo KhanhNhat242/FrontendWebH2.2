@@ -1,11 +1,11 @@
 import Paper from "./Paper";
 
-function TopPaper() {
+function TopPaper({ topPaper }) {
     const typePaper = 1
 
     return ( 
         <>
-            <Paper typePaper={typePaper} />
+            <Paper typePaper={typePaper} topPaper={topPaper} />
         </>
      );
 }

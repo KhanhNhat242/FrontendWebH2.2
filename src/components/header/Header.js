@@ -4,8 +4,15 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import logo from '../../assets/logoH22.png'
 import {motion} from 'framer-motion'
 import { NavLink } from 'react-router-dom'
+// import { useState } from 'react'
 
 function Header() {
+    var numClickNavItem = 0
+
+    const handleClickNavItem = () => {
+        numClickNavItem = 1
+        console.log(numClickNavItem);
+    }
 
     return (
         <>
@@ -22,19 +29,19 @@ function Header() {
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll" className='header-right'>
-                        <Nav className="me-auto nav-item-wrapper">
-                            <NavLink to="/" className='nav-item' >Trang chủ</NavLink>
+                        <Nav className="me-auto nav-item-wrapper" onClick={handleClickNavItem()}>
+                            <NavLink to="/" className='nav-item'>Trang chủ</NavLink>
                         </Nav>
-                        <Nav className="me-auto nav-item-wrapper">
+                        <Nav className="me-auto nav-item-wrapper" onClick={handleClickNavItem()}>
                             <NavLink to="/event" className='nav-item'>Sự kiện</NavLink>
                         </Nav>
-                        <Nav className="me-auto nav-item-wrapper">
+                        <Nav className="me-auto nav-item-wrapper" onClick={handleClickNavItem()}>
                             <NavLink to="/achievement" className='nav-item'>Thành tích</NavLink>
                         </Nav>
                         <Nav className="me-auto nav-item-wrapper">
                             <NavLink to="https://aiwiki.github.io" className='nav-item'>Wiki</NavLink>
                         </Nav>
-                        <Nav className="me-auto nav-item-wrapper">
+                        <Nav className="me-auto nav-item-wrapper" onClick={handleClickNavItem()}>
                             <NavLink to="/member" className='nav-item'>Thành viên</NavLink>
                         </Nav>
                         {/* <Nav className="me-auto nav-item-wrapper login-wrapper">
