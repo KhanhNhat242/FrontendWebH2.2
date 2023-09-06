@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/FrontendWebH2.2/static/css/main.baffea82.css",
+    "main.js": "/FrontendWebH2.2/static/js/main.7d96cfb0.js",
+    "static/media/member_background-min.png": "/FrontendWebH2.2/static/media/member_background-min.2e7d8a4a588405c4b4b0.png",
+    "static/media/image_achive_11.png": "/FrontendWebH2.2/static/media/image_achive_11.5460b03dfec876a73bab.png",
+    "static/media/image_home_41.png": "/FrontendWebH2.2/static/media/image_home_41.fbaac1844661a9f7bf90.png",
+    "static/media/event-2.jpg": "/FrontendWebH2.2/static/media/event-2.26cf178e8202b2972742.jpg",
+    "static/media/backgroundEvent3.png": "/FrontendWebH2.2/static/media/backgroundEvent3.b211e69aad856a69bc36.png",
+    "static/media/home21.png": "/FrontendWebH2.2/static/media/home21.774e2a48a0356ac9a26b.png",
+    "static/media/spirit1.png": "/FrontendWebH2.2/static/media/spirit1.cdee60b779b0c8c3ed6d.png",
+    "static/media/background.png": "/FrontendWebH2.2/static/media/background.58700f01fade81413912.png",
+    "static/media/image_home_32.png": "/FrontendWebH2.2/static/media/image_home_32.65baa9c46b910038f08b.png",
+    "static/media/image_home_31.png": "/FrontendWebH2.2/static/media/image_home_31.9d41e2431a0fa3bb5d3d.png",
+    "static/media/spirit3.png": "/FrontendWebH2.2/static/media/spirit3.6026c60db4758626ef60.png",
+    "static/media/achieve25.png": "/FrontendWebH2.2/static/media/achieve25.c7ab285d4ffebd5475c2.png",
+    "static/media/achieve26.png": "/FrontendWebH2.2/static/media/achieve26.b8a59173fd5edc98d0b5.png",
+    "static/media/achieve21.png": "/FrontendWebH2.2/static/media/achieve21.706c7572007fe6131e05.png",
+    "static/media/MrTinh.png": "/FrontendWebH2.2/static/media/MrTinh.6c6032d54d8033e2131b.png",
+    "static/media/achieve22.png": "/FrontendWebH2.2/static/media/achieve22.cf713fd0d427842ca6a9.png",
+    "static/media/achieve23.png": "/FrontendWebH2.2/static/media/achieve23.8eadddbb4bf9435bf0a3.png",
+    "static/media/spirit2.png": "/FrontendWebH2.2/static/media/spirit2.8592cb4ce507675b39d0.png",
+    "static/media/achieve24.png": "/FrontendWebH2.2/static/media/achieve24.b856c77edda8903ef2c8.png",
+    "static/media/h2title.png": "/FrontendWebH2.2/static/media/h2title.b9f784bf65ec2610de9f.png",
+    "static/media/revicons.eot": "/FrontendWebH2.2/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/FrontendWebH2.2/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/FrontendWebH2.2/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/FrontendWebH2.2/index.html",
+    "main.baffea82.css.map": "/FrontendWebH2.2/static/css/main.baffea82.css.map",
+    "main.7d96cfb0.js.map": "/FrontendWebH2.2/static/js/main.7d96cfb0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.baffea82.css",
+    "static/js/main.7d96cfb0.js"
+  ]
+}
