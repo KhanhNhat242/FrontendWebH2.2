@@ -63,11 +63,16 @@
 
 .event-wrapper{
     position: relative;
+    background-color: $primary;
 
     .background-event{
         width: 100%;
         height: 450px;
-
+        // opacity: 0.9;
+        // -webkit-transform: scaleX(-1);
+        // transform: scaleX(-1);
+        // transform: rotate(180deg);
+        
         @include mobile{
             height: 230px;
         }
@@ -103,15 +108,21 @@
                     position: absolute;
                     width: 39%;
             
+                    @include mobile{
+                        width: 45%;
+                    }
+
                     .event-name{
                         color: #fff;
                         font-size: 25px;
                         font-family: $defaultFont;
                         font-weight: bold;
-                        text-align: justify;
+                        // text-align: justify;
+                        text-transform: uppercase;
+                        margin: 16px 10px 10px;
 
                         @include mobile{
-                            font-size: 20px;
+                            font-size: 17px;
                         }
                     }
                 }
@@ -121,7 +132,7 @@
                     height: 70%;
                     position: absolute;
                     right: 10%;
-                    top: 10%;
+                    top: 15%;
                     border-radius: 20px;
 
                     @include tablet{
@@ -134,6 +145,7 @@
                         height: 40%;
                         right: 7%;
                         top: 32%;
+                        border-radius: 15px;
                     }
                 }
             }
@@ -239,7 +251,7 @@
         @include mobile{
             padding: 5px;
             height: 1020px;
-            flex-direction: column-reverse;
+            // flex-direction: column-reverse;
         }
     
         .math-col1{
@@ -379,7 +391,8 @@
             }
 
             @include mobile{
-                margin: 20px 5%;
+                margin: 0 1%;
+                padding: 0;
             }
 
             .spirit-img-wrapper{
@@ -387,8 +400,8 @@
                 justify-content: center;
 
                 .spirit-img{
-                    width: 300px;
-                    height: 300px;
+                    width: 100%;
+                    // height: 300px;
     
                     @include tablet{
                         width: 100%;
@@ -405,7 +418,8 @@
                 text-align: center;
 
                 @include mobile{
-                    font-size: $fontSizeMobile;
+                    font-size: 15px;
+                    padding: 2px;
                 }
             }
         }

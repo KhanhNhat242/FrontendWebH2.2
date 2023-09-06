@@ -21,7 +21,7 @@
     color: white;
     display: flex;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
 }
 .custom-event {
     display: flex;
@@ -55,6 +55,8 @@
         color: white;
         text-decoration: none;
         text-align: left;
+        // text-transform: uppercase;
+
         @include mobile {
             width: 100%;
             text-align: left;
@@ -73,7 +75,13 @@
     
 }
 
+.paper-row{
+    padding: 0 80px;
 
+    @include mobile{
+        padding: 0 5%;
+    }
+}
 
 
 // event detail

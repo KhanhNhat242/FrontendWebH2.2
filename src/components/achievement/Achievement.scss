@@ -60,6 +60,7 @@
             font-family: $defaultFont;
             color: #fff;
             text-align: justify;
+            margin-top: 18px;
 
             @include mobile{
                 font-size: $fontSizeMobile;

@@ -8,7 +8,7 @@
 
     @include mobile{
         padding: 10px;
-        // margin-top: -4px;
+        margin-top: 70px;
     }
 
     .paper-row{
@@ -77,6 +77,7 @@
                 font-family: $defaultFont;
                 font-weight: bold;
                 color: #fff;
+                margin-top: -3px;
             }
         }
     }

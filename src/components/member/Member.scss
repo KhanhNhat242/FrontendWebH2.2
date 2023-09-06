@@ -8,6 +8,7 @@
 
     @include mobile{
         padding: 30px 5%;
+        margin-top: 70px;
     }
 
     .member-row{
@@ -90,12 +91,14 @@
                 font-family: $defaultFont;
                 text-align: justify;
                 color: #fff;
+                margin-top: 45px;
             }
 
             .role{
                 // font-size: 55px;
                 font-family: $defaultFont;
                 font-weight: bold;
+                font-size: 40px;
                 color: #fff;
                 text-align: center;
             }
@@ -132,7 +135,7 @@
         .carousel-item-wrapper{
             display: flex;
             background: linear-gradient(300deg, rgba(200, 200, 200, 0.70) 0%, rgba(100, 100, 100, 0.60) 100%), rgba(200, 200, 200, 0.70);
-            padding: 20px;
+            padding: 40px;
             border-radius: 30px;
             @include mobile{
                 display: block;
@@ -148,7 +151,7 @@
     
                 .avt-detail{
                     border-radius: 30px;
-                    width: 200px;
+                    width: 216px;
                     height: 300px;
 
                     &:hover{
@@ -165,7 +168,7 @@
             }
             
             .role{
-                // font-size: 55px;
+                font-size: 40px;
                 font-family: $defaultFont;
                 font-weight: bold;
                 color: #fff;
@@ -221,6 +224,7 @@
         .alumni-title{
             font-family: $defaultFont;
             font-weight: bold;
+            font-size: 40px;
             color: #fff;
             text-align: center;
             padding: 20px 0;
@@ -236,7 +240,7 @@
                 justify-content: center;
     
                 .avt-member{
-                    width: 200px;
+                    width: 216px;
                     height: 300px;
                     border-radius: 20px;
                     cursor: pointer;

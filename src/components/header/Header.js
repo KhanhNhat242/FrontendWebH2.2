@@ -1,7 +1,7 @@
 import './Header.scss'
 import {Navbar, Nav} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import logo from '../../assets/logoH221.png'
+import logo from '../../assets/logoH22.png'
 import {motion} from 'framer-motion'
 import { NavLink } from 'react-router-dom'
 
