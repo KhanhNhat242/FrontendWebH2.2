@@ -5,7 +5,8 @@
     position: -webkit-sticky;
     position: sticky;
     top: 95px;
-    
+    margin-top: 15px;
+
     .achieve-link{
         .achieve-btn{
             background-color: $defaultColor;
@@ -17,7 +18,8 @@
             width: 100%;
             font-size: $defaultFontSize;
             font-family: $defaultFont;
-    
+            font-weight: bold;
+
             @include mobile{
                 font-size: $fontSizeMobile;
             }

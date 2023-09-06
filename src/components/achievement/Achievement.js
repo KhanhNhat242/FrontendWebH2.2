@@ -24,7 +24,7 @@ function Achievement(){
                 <img src={background} alt='background' className='achievement-background' />
                 <motion.img src={title} alt='title' className='achievement-title' 
                     initial={{x : "-50%", scale: 1.2,y: -100, opacity: 0}}
-                    whileInView={{x : "-50%", scale: 1,y: -50, opacity: 1}}
+                    whileInView={{x : "-50%", scale: 1,y: -70, opacity: 1}}
                     transition={{delay: 0.3, duration: 1, type: 'Tween', stiffness: 140}}
                 />
             </div>

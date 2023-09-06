@@ -9,7 +9,7 @@ import home41 from '../../assets/image_home_41.png'
 import sprit1 from '../../assets/spirit1.png'
 import sprit2 from '../../assets/spirit2.png'
 import sprit3 from '../../assets/spirit3.png'
-import backgroundEvent from '../../assets/backgroundEvent.png'
+import backgroundEvent from '../../assets/backgroundEvent3.png'
 // import home41 from '../../assets/image_home_41.png'
 import {Carousel} from 'react-bootstrap'
 import {motion} from 'framer-motion'
@@ -27,12 +27,12 @@ function Home({ events }) {
                 />
                 <motion.img src={backgroundimg} alt="background-img" className='background-img' 
                     initial={{y: 100, opacity: 0}}
-                    animate={{y:0, opacity: 1}}
+                    animate={{y: 0, opacity: 1}}
                     transition={{delay: 0.6, duration: 1, type: 'Tween', stiffness: 150}}
                 />
                 <motion.p className='ai-club-txt'
                     initial={{y: 300, scale: 0.1,opacity: 0}}
-                    animate={{y:0, x: "-50%", scale: 1,opacity: 1}}
+                    animate={{y:10, x: "-50%", scale: 1,opacity: 1}}
                     transition={{delay: 0.6, duration: 5, type: 'spring', stiffness: 120}}
                 >
                     Câu lạc bộ Trí tuệ Nhân tạo là nơi dành cho sinh viên Công nghệ thông tin IUH học tập và nghiên cứu về trí tuệ nhân tạo
@@ -43,7 +43,7 @@ function Home({ events }) {
                 <h3 className='event-title'>Sự Kiện Sắp Tới</h3>
                 <Carousel>
                     {events.map((ev) => (
-                        <Carousel.Item interval={10000000} key={ev.id_event}>
+                        <Carousel.Item interval={5000} key={ev.id_event}>
                             <div className='event-name-wrapper'>
                                 <h3 className='event-name'>{ev.name_event}</h3>
                             </div>
@@ -182,12 +182,12 @@ function Home({ events }) {
                              initial={{x: -50,y : -50,  opacity: 0}}
                              whileInView={{x: 0, y : 0,  opacity: 1}}
                              transition={{delay: 0.2, duration: 0.5, type: 'spring', stiffness: 150}}
-                        > Kết nối sinh viên tài năng để  tạo nên giá trị thực</motion.p>
+                        > Kết nối sinh viên để tạo nên giá trị thực</motion.p>
                     </Col>
                 </Row>
-                {/* <Row>
+                <Row>
                     <img src={home41} alt='home41' style={{padding: 0}} />
-                </Row> */}
+                </Row>
             </Container>
         </>
      );
