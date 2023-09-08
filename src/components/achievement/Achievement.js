@@ -1,6 +1,6 @@
 import './Achievement.scss'
 import background from '../../assets/image_achive_11.png'
-import title from '../../assets/h1 #headline.png'
+import title from '../../assets/logoAchievement.png'
 import { Container, Row, Col } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import achieve21 from '../../assets/achieve21.png'
