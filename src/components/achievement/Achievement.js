@@ -24,11 +24,11 @@ function Achievement({ paper }){
 
     useEffect(() => {
         paper.forEach((p) => {
-            if(p.institute === 'Euréka')
+            if(p.institute.trim() === 'Euréka')
                 setEureka(prev1 => prev1 + 1)
-            else if(p.institute === 'FDSE')
+            else if(p.institute.trim() === 'FDSE')
                 setFdse(prev2 => prev2 + 1)
-            else if(p.institute === 'YSC')
+            else if(p.institute.trim() === 'YSC')
                 setYsc(prev3 => prev3 + 1)
             else 
                 setOther(prev4 => prev4 + 1)
