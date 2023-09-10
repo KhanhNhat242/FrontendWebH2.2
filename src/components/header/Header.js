@@ -7,12 +7,6 @@ import { NavLink } from 'react-router-dom'
 // import { useState } from 'react'
 
 function Header() {
-    var numClickNavItem = 0
-
-    const handleClickNavItem = () => {
-        numClickNavItem = 1
-        console.log(numClickNavItem);
-    }
 
     return (
         <>
@@ -29,19 +23,19 @@ function Header() {
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll" className='header-right'>
-                        <Nav className="me-auto nav-item-wrapper" onClick={handleClickNavItem()}>
+                        <Nav className="me-auto nav-item-wrapper">
                             <NavLink to="/" className='nav-item'>Trang chủ</NavLink>
                         </Nav>
-                        <Nav className="me-auto nav-item-wrapper" onClick={handleClickNavItem()}>
+                        <Nav className="me-auto nav-item-wrapper">
                             <NavLink to="/event" className='nav-item'>Sự kiện</NavLink>
                         </Nav>
-                        <Nav className="me-auto nav-item-wrapper" onClick={handleClickNavItem()}>
+                        <Nav className="me-auto nav-item-wrapper">
                             <NavLink to="/achievement" className='nav-item'>Thành tích</NavLink>
                         </Nav>
                         <Nav className="me-auto nav-item-wrapper">
                             <NavLink to="https://aiwiki.github.io" className='nav-item'>Wiki</NavLink>
                         </Nav>
-                        <Nav className="me-auto nav-item-wrapper" onClick={handleClickNavItem()}>
+                        <Nav className="me-auto nav-item-wrapper">
                             <NavLink to="/member" className='nav-item'>Thành viên</NavLink>
                         </Nav>
                         {/* <Nav className="me-auto nav-item-wrapper login-wrapper">

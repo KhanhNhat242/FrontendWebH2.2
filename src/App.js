@@ -8,7 +8,7 @@ import EventDetail from './components/event/EventDetail'
 import TopPaper from './components/achievement/paper/TopPaper'
 import AllPaper from './components/achievement/paper/AllPaper'
 import Member from './components/member/Member'
-import { event_data as  events, menber_data as members, interest_paper as topPaper, infor_paper as commonPaper} from './data/data.js'
+import { event_data as  events, member_data as members, paper} from './data/data.js'
 // import { useEffect, useState } from 'react'
 // import axios from 'axios'
 
@@ -46,9 +46,9 @@ function App() {
       <Header />
         <Routes>
           <Route path='/' element={<Home events={events} />}></Route>
-          <Route path='/achievement' element={<Achievement />}></Route>
-          <Route path='/achievement/top-paper' element={<TopPaper topPaper={topPaper} />}></Route>
-          <Route path='/achievement/all-paper' element={<AllPaper commonPaper={commonPaper} />}></Route>
+          <Route path='/achievement' element={<Achievement paper={paper} />}></Route>
+          <Route path='/achievement/top-paper' element={<TopPaper paper={paper} />}></Route>
+          <Route path='/achievement/all-paper' element={<AllPaper paper={paper} />}></Route>
           <Route path='/member' element={<Member members={members} />}></Route>
           <Route path='/wiki'></Route>
           <Route path='/event' element={<Event events = {events}/>}></Route>

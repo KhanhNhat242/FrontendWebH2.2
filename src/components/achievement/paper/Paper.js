@@ -1,48 +1,91 @@
 import './Paper.scss'
-import { Container, Row} from 'react-bootstrap'
+import { Container, Row, Col} from 'react-bootstrap'
 import AchieveNav from '../achieveNav/AchieveNav'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useEffect } from 'react'
 
-function Paper({ typePaper, topPaper, commonPaper }) {
+function Paper({ typePaper, paper }) {
     
     const handleTopPaper = () => {
-        topPaper.sort((a, b) => {
+        paper.sort((a, b) => {
             return b.year - a.year
         })
 
-        return topPaper.map((tp) => (
-            <Row className='paper-row' key={tp.title}>
-                <div className='col-lg-10 paper-col-left'>
-                    <h3 className='paper-title'>{tp.title}</h3>
-                    <h5 className='paper-author'>{tp.author}</h5>
-                    <p className='paper-abstract'>{tp.abstract}</p>
-                    <h3 className='paper-contest'>{tp.institute}</h3>
-                </div>
-                <div className='col-lg-2 paper-col-right'>
-                    <h2 className='paper-year'>{tp.year}</h2>
-                </div>
-            </Row>
-        ))
+        return paper.map((p) => {
+            if(typePaper === 1 && p.interest === 'True')
+                return (
+                    <Row className='paper-row' key={p.title}>
+                        <div className='col-lg-10 paper-col-left'>
+                            {p.link_paper !== 'nan' ? 
+                                (<a href={p.link_paper} style={{textDecoration: 'none'}}>
+                                    <h3 className='paper-title'>{p.title}</h3>
+                                </a>) : 
+                                (<h3 className='paper-title'>{p.title}</h3>)}
+                            <h5 className='paper-author'>{p.author}</h5>
+                            <p className='paper-abstract'>{p.abstract}</p>
+                            <Row>
+                                <Col>
+                                    <h3 className='paper-contest'>{p.institute}</h3>
+                                </Col>
+                                <Col>
+                                    <a href={p.link_github} style={{display: `${p.link_github !== 'nan' ? 'block' : 'none'}`}}>
+                                        <button className='btnCode'>
+                                            <FontAwesomeIcon icon={faGithub}/>
+                                            <span className='btnCode-txt'>Code</span>
+                                        </button>
+                                    </a>
+                                </Col>
+                            </Row>
+                        </div>
+                        <div className='col-lg-2 paper-col-right'>
+                            <h2 className='paper-year'>{p.year}</h2>
+                        </div>
+                    </Row>
+                )
+            return null
+        })
     }
 
     const handleAllPaper = () => {
-        commonPaper.sort((a, b) => {
+        paper.sort((a, b) => {
             return b.year - a.year
         })
 
-        return commonPaper.map((cp) => (
-            <Row className='paper-row' key={cp.title}>
-                <div className='col-lg-10 paper-col-left'>
-                    <h3 className='paper-title'>{cp.title}</h3>
-                    <h5 className='paper-author'>{cp.author}</h5>
-                    <p className='paper-abstract'>{cp.abstract}</p>
-                    <h3 className='paper-contest'>{cp.institute}</h3>
-                </div>
-                <div className='col-lg-2 paper-col-right'>
-                    <h2 className='paper-year'>{cp.year}</h2>
-                </div>
-            </Row>
-        ))
+        return paper.map((p) => {
+            if(typePaper === 2)
+                return (
+                    <Row className='paper-row' key={p.title}>
+                        <div className='col-lg-10 paper-col-left'>
+                            {p.link_paper !== 'nan' ? 
+                                    (<a href={p.link_paper} style={{textDecoration: 'none'}}>
+                                        <h3 className='paper-title'>{p.title}</h3>
+                                    </a>) : 
+                                    (<h3 className='paper-title'>{p.title}</h3>)}
+                            <h5 className='paper-author'>{p.author}</h5>
+                            <p className='paper-abstract'>{p.abstract}</p>
+                            <Row>
+                                <Col>
+                                    <h3 className='paper-contest'>{p.institute}</h3>
+                                </Col>
+                                <Col>
+                                    <a href={p.link_github} style={{display: `${p.link_github !== 'nan' ? 'block' : 'none'}`}}>
+                                        <button className='btnCode'>
+                                            <FontAwesomeIcon icon={faGithub}/>
+                                            <span className='btnCode-txt'>Code</span>
+                                        </button>
+                                    </a>
+                                </Col>
+                            </Row>
+                        </div>
+                        <div className='col-lg-2 paper-col-right'>
+                            <h2 className='paper-year'>{p.year}</h2>
+                        </div>
+                    </Row>
+                )
+            return null
+        })
     }
 
     return ( 

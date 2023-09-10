@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLocationDot, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faFacebook, faGithub, faYoutube, faDiscord } from '@fortawesome/free-brands-svg-icons'
 import './Footer.scss'
-import {motion} from 'framer-motion'
+// import {motion} from 'framer-motion'
 
 function Footer() {
     return ( 
@@ -21,7 +21,7 @@ function Footer() {
                     <h2 className='contact-title'>Liên hệ</h2>
                     <div className='location'>
                         <FontAwesomeIcon icon={faLocationDot}  style={{color : "red"}}/>
-                        <p className='location-txt'>12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, thành phố Hồ Chí Minh, Việt Nam - Phòng H2.2</p>
+                        <p className='location-txt'>12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, Thành phố Hồ Chí Minh, Việt Nam - Phòng H2.2</p>
                     </div>
                     <div className='mail'>
                         <FontAwesomeIcon icon={faEnvelope} style={{color : "white"}}/>
