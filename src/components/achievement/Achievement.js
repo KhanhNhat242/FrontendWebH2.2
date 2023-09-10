@@ -96,7 +96,7 @@ function Achievement({ paper }){
                                     initial={{ x:-50, scale : 0.1,opacity: 0}}
                                     whileInView={{ x : 0,  scale : 1,opacity: 1}}
                                     transition={{delay: 0.3, duration: 0.5, type: 'tween'}}
-                                >1000</motion.p>
+                                >{eureka + ysc + fdse + other}</motion.p>
                             </div>
                         </Row>
                         <Row className='achieve-row1'>
