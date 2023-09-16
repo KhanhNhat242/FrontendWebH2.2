@@ -56,7 +56,7 @@ function Member({ members }) {
                     <div className='wrap-core-member'>
                         <Carousel1>
                             {members.map((m) => {
-                                if(m.role === 'core member' || m.role === 'member')
+                                if(m.role !== "alumni")
                                     return (
                                         <Carousel1.Item interval={5000} key={m.id_user}>
                                             <div className='carousel-item-wrapper'>

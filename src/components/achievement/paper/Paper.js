@@ -14,7 +14,7 @@ function Paper({ typePaper, paper }) {
         })
 
         return paper.map((p) => {
-            if(typePaper === 1 && p.interest === 'True')
+            if(typePaper === 1 && p.interest)
                 return (
                     <Row className='paper-row' key={p.title}>
                         <div className='col-lg-10 paper-col-left'>
