@@ -7,6 +7,10 @@
     top: 95px;
     margin-top: 15px;
 
+    @include mobile{
+        margin-top: 70px;
+    }
+
     .achieve-link{
         .achieve-btn{
             background-color: $defaultColor;

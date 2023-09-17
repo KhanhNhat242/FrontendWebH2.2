@@ -2,16 +2,20 @@
 @import '.././globalStyle/mixin';
 
 .member-wrapper{
-    margin-top: 77px;
+    // margin-top: 77px;
     padding: 60px 16%;
     background-color: $primary;
 
     @include mobile{
         padding: 30px 5%;
-        margin-top: 70px;
+        // margin-top: 70px;
     }
 
     .member-row{
+        @include mobile{
+            margin-top: 50px;
+        }
+
        .member-col1{
             position: relative;
             padding: 0 20px;
@@ -165,6 +169,8 @@
                 font-size: 20px;
                 text-align: center;
                 margin-top: 15px;
+                margin-left: -22%;
+                width: 140%;
             }
             
             .role{
@@ -173,7 +179,8 @@
                 font-weight: bold;
                 color: #fff;
                 margin-left: 5%;
-
+                text-transform: capitalize;
+            
                 @include mobile{
                     text-align: center;
                     margin: 0;
@@ -185,7 +192,7 @@
                 text-align: justify;
                 color: #fff;
                 padding-left: 3%;
-                margin: 60px 2% 0;
+                margin: 20px 2% 0;
 
                 @include mobile{
                     margin: 20px 0 0;

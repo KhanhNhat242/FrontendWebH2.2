@@ -4,9 +4,7 @@
 
 
 .custom-event-wrapper {
-    @include mobile {
-        margin-top: 70px;
-    }
+    margin: 0;
 }
 .wrapper {
     img {
@@ -42,10 +40,12 @@
         padding-right: 30px;
         align-items:start ;
         height: 100%;
-        padding-top: 10px;
+        padding-top: 18px;
+
         @include mobile {
             width: 100%;
             text-align: right;
+            padding-right: 26px;
         }
     }
     .paper-txt2 {
@@ -77,8 +77,10 @@
 
 .paper-row{
     padding: 0 80px;
+    margin-top: 20px;
 
     @include mobile{
+        margin-top: 50px;
         padding: 0 5%;
     }
 }

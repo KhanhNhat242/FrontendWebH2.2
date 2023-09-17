@@ -8,11 +8,9 @@ import 'react-multi-carousel/lib/styles.css';
 import {Carousel as Carousel1} from 'react-bootstrap';
 import {motion} from 'framer-motion'
 
-function Member({ members, typePage }) {
+function Member({ members }) {
     // console.log(members);
-
-    typePage = 4
-
+   
     return ( 
         <>
             <Container className='member-wrapper'>
@@ -57,8 +55,8 @@ function Member({ members, typePage }) {
                 <Row className='member-detail-row'>
                     <div className='wrap-core-member'>
                         <Carousel1>
-                            {members.map((m, index) => {
-                                if(m.role === 'Core Member' || m.role === 'Member')
+                            {members.map((m) => {
+                                if(m.role !== "alumni")
                                     return (
                                         <Carousel1.Item interval={5000} key={m.id_user}>
                                             <div className='carousel-item-wrapper'>
@@ -70,11 +68,12 @@ function Member({ members, typePage }) {
                                                 </div>
                                                 <div className='col-lg-9 member-detail-col'>
                                                     <h3 className='role'>{m.role}</h3>
-                                                    <p className='detail-member'>{m.describe}</p>
+                                                    <p className='detail-member' dangerouslySetInnerHTML={{ __html: m.describe }}></p>
                                                 </div>
                                             </div>
                                         </Carousel1.Item>
                                     )
+                                return null
                                 }
                             )}
                         </Carousel1>
@@ -83,20 +82,20 @@ function Member({ members, typePage }) {
                 <Row className='alumni-row'>
                     <h3 className='alumni-title'>Alumni</h3>
                     {members.map((m, index) => {
-                        if(m.role === 'Alumni')
+                        if(m.role === 'alumni')
                             return (
                                 <Col className='avt-wrapper col-6 col-md-4' key={index}>
                                     <motion.div className='img-wrapper'
                                         initial={{x: 0, y : 50, opacity: 0 }}
                                         whileInView={{x: 0, y : 0, opacity: 1 }}
                                         transition={{duration: 1, delay: 0.3, type: "tween", stiffness: 120}}
-
                                     >
                                         <img src={`${m.image}`} alt='avt' className='avt-member' />
                                     </motion.div>
                                     <h3 className='member-name'>{m.full_name}</h3>
                                 </Col>  
                                 )
+                        return null
                     })}
                     
                 </Row>

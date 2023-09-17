@@ -22,7 +22,7 @@ function Home({ events }) {
             <div className="home-wrapper">
                 <motion.img src={title} alt="AI-CLUB" className="h2-title"
                     initial={{x : "-50%", scale: 1.5,y: -100, opacity: 0}}
-                    whileInView={{x : "-50%", scale: 1,y: 0, opacity: 1}}
+                    whileInView={{x : "-50%", scale: 1,y: 20, opacity: 1}}
                     transition={{delay: 0.3, duration: 1, type: 'Tween', stiffness: 140}}
                 />
                 <motion.img src={backgroundimg} alt="background-img" className='background-img' 
@@ -32,7 +32,7 @@ function Home({ events }) {
                 />
                 <motion.p className='ai-club-txt'
                     initial={{y: 300, scale: 0.1,opacity: 0}}
-                    animate={{y:10, x: "-50%", scale: 1,opacity: 1}}
+                    animate={{y:20, x: "-50%", scale: 1,opacity: 1}}
                     transition={{delay: 0.6, duration: 5, type: 'spring', stiffness: 120}}
                 >
                     Câu lạc bộ Trí tuệ Nhân tạo là nơi dành cho sinh viên Công nghệ thông tin IUH học tập và nghiên cứu về trí tuệ nhân tạo

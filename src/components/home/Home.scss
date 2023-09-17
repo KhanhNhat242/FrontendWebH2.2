@@ -2,7 +2,7 @@
 @import '../globalStyle//mixin';
 
 .home-wrapper{
-    margin-top: 75px;
+    // margin-top: 75px;
     position: relative;
     width: 100%;
     height: 650px;
@@ -10,7 +10,7 @@
     overflow: hidden;
 
     @include mobile{
-        margin-top: 70px;
+        // margin-top: 70px;
         height: 286px;
     }
 }
@@ -23,7 +23,7 @@
 
     @include mobile{
         width: 320px;
-        transform: translateY(-15px) translateX(-50%);
+        transform: translateY(300px) translateX(-50%);
     }
 }
 
@@ -57,7 +57,7 @@
         font-size: 18px;
         width: 82%;
         top: 40%;
-        transform: translateX(-50%) translateY(16px) scale(1) translateZ(0px);
+        transform: translateX(-50%) translateY(40px) scale(1) translateZ(0px);
     }
 }
 
@@ -123,6 +123,7 @@
 
                         @include mobile{
                             font-size: 17px;
+                            margin: -5px 10px 10px;
                         }
                     }
                 }
@@ -384,6 +385,7 @@
             margin: 0 4%;
             box-shadow: 5px 5px 18px #888888;
             border-radius: 10px;
+            overflow: hidden;
 
             @include tablet{
                 margin: 2%;

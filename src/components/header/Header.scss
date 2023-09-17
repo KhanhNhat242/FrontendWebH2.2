@@ -8,8 +8,8 @@
     width: 100%;
     // float: right;
     position: fixed !important;
-    top: 0;
-    z-index: 9;
+    // top: 0;
+    z-index: 1;
     display: flex;
     padding: 0 15px !important;
 
@@ -30,12 +30,12 @@
         // flex: 1;
 
         .logo{
-            width: 80px;
+            width: 50px;
             padding: 5px;
             // height: 120px;
 
         @include mobile{
-            width: 80px;
+            width: 75px;
             height: 60px;
         }
         }
