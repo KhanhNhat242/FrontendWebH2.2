@@ -4,10 +4,17 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import logo from '../../assets/logoH22.png'
 import {motion} from 'framer-motion'
 import { NavLink } from 'react-router-dom'
-// import { useState } from 'react'
+import { useState, useRef } from 'react'
 
 function Header() {
 
+    const btnToggle = useRef(null);
+
+
+    const clickToggle = () => {
+        btnToggle.current.click();
+    }
+    
     return (
         <>
             {/* <Container className='header-wrapper'> */}
@@ -21,23 +28,27 @@ function Header() {
                             transition={{delay: 0.2, duration: 0.5, type: 'spring', stiffness: 120}}
                         />
                     </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="navbarScroll" />
+                    <Navbar.Toggle aria-controls="navbarScroll"  ref={btnToggle}/>
                     <Navbar.Collapse id="navbarScroll" className='header-right'>
                         <Nav className="me-auto nav-item-wrapper">
-                            <NavLink to="/" className='nav-item'>Trang chủ</NavLink>
+                            <NavLink to="/" className='nav-item'  onClick= {clickToggle}>Trang chủ</NavLink>
+                            <NavLink to="/event" className='nav-item'  onClick= {clickToggle}>Sự kiện</NavLink>
+                            <NavLink to="/achievement" className='nav-item'  onClick= {clickToggle}>Thành tích</NavLink>
+                            <a href="https://aiwiki.github.io" className='nav-item'  onClick= {clickToggle} target='_blank' rel='error noreferrer'>Wiki</a>
+                            <NavLink to="/member" className='nav-item'  onClick= {clickToggle}>Thành viên</NavLink>
+                        </Nav>
+                        {/* <Nav className="me-auto nav-item-wrapper">
+                            
                         </Nav>
                         <Nav className="me-auto nav-item-wrapper">
-                            <NavLink to="/event" className='nav-item'>Sự kiện</NavLink>
+                            
                         </Nav>
                         <Nav className="me-auto nav-item-wrapper">
-                            <NavLink to="/achievement" className='nav-item'>Thành tích</NavLink>
+                            
                         </Nav>
                         <Nav className="me-auto nav-item-wrapper">
-                            <NavLink to="https://aiwiki.github.io" className='nav-item'>Wiki</NavLink>
-                        </Nav>
-                        <Nav className="me-auto nav-item-wrapper">
-                            <NavLink to="/member" className='nav-item'>Thành viên</NavLink>
-                        </Nav>
+                            
+                        </Nav> */}
                         {/* <Nav className="me-auto nav-item-wrapper login-wrapper">
                             <Nav.Link href="/log-in" className='btn-login'>Đăng nhập</Nav.Link>
                         </Nav> */}

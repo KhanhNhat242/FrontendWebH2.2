@@ -18,7 +18,7 @@ function EventDetail ({ typePage }) {
         const getData = async () => {
             try {
                 const res = await axios.get(`https://aiclubiuh-core.tranminh20.repl.co/api/event/${id}`)
-                console.log(res.data)
+                // console.log(res.data)
                 setEvent(res.data)
                 setLoading(false)
             }
@@ -32,7 +32,7 @@ function EventDetail ({ typePage }) {
     },[])
 
     typePage = 4
-    console.log(event)
+    // console.log(event)
     let richText = event.content
 
     return ( 

@@ -27,13 +27,13 @@ function Event ({ events }) {
                             <Col className='custom-event col-12' key={index} onClick={() => handleNavigate(event.id_event)}>
                                 <motion.p 
                                     className='paper-txt1'
-                                    initial={{x: -100 * ((-1)**index), y : 0, opacity: 0}}
+                                    initial={{x: -100, y : 0, opacity: 0}}
                                     animate= {{x: 0, y : 0, opacity: 1}} 
                                     transition={{duration: 0.5, delay: 0.3 * index, type: "spring", stiffness: 130}}
                                 >{event.time}</motion.p>
                                 <motion.div 
                                     className='paper-txt2' 
-                                    initial={{x: -100 * ((-1)**index), y : 0, opacity: 0}}
+                                    initial={{x: -100, y : 0, opacity: 0}}
                                     animate= {{x: 0, y : 0, opacity: 1}} 
                                     transition={{duration: 0.5, delay: 0.3 * index, type: "spring", stiffness: 130}}
                                 >

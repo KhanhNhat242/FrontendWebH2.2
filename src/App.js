@@ -25,7 +25,7 @@ function App() {
       const res2 = await axios.get(`${GLOBAL_URL_API}/api/events/`)
       const res3 = await axios.get(`${GLOBAL_URL_API}/api/papers/`)
 
-      console.log(res1)
+      // console.log(res1)
       setMembers(res1.data)
       setEvents(res2.data)
       setPapers(res3.data)
