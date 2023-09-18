@@ -8,7 +8,6 @@ import EventDetail from './components/event/EventDetail'
 import TopPaper from './components/achievement/paper/TopPaper'
 import AllPaper from './components/achievement/paper/AllPaper'
 import Member from './components/member/Member'
-<<<<<<< HEAD
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 
@@ -39,45 +38,6 @@ function App() {
   useEffect(() => {
     getData()
   }, [])
-=======
-// import { event_data as  events, member_data as members, paper} from './data/data.js'
-import { useEffect, useState } from 'react'
-import axios from 'axios'
-
-function App() {
-
-  const [members, setMember] = useState([])
-  const [events, setEvents] = useState([])
-  const [paper, setTopPaper] = useState([])
-  // const [commonPaper, setCommonPaper] = useState([])
-
-  const getData = async () => {
-    try {
-      const res1 = await axios.get('https://aiclubiuh-core.tranminh20.repl.co/api/members/')
-      const res2 = await axios.get('https://aiclubiuh-core.tranminh20.repl.co/api/events/')
-      const res3 = await axios.get('https://aiclubiuh-core.tranminh20.repl.co/api/papers/')
-      // const res3 = await axios.get('https://raw.githubusercontent.com/KhanhNhat242/APIH22Fake/main/interest_paper.json')
-      // const res4 = await axios.get('https://raw.githubusercontent.com/KhanhNhat242/APIH22Fake/main/infor_paper.json')
-      // console.log(res.data)
-      console.log(res1.data)
-      setMember(res1.data)
-      setEvents(res2.data)
-      setTopPaper(res3.data)
-      // setCommonPaper(res4.data)
-    }
-    catch(err) {
-      console.log(err)
-    }
-  }
-
-  useEffect(() => {
-    getData()
-  }, [])
-
-  // console.log("members : ",members)
-  // console.log("events : ",events)
-  // console.log("paper : ",paper)
->>>>>>> 1ca45d66f774c994ba255b03a2382d492954583c
 
   return (
     <div className="App">
