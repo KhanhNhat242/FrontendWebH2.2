@@ -11,7 +11,7 @@ import Member from './components/member/Member'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 
-const GLOBAL_URL_API = 'https://aiclubiuh-core.tranminh20.repl.co'
+const GLOBAL_URL_API = 'http://localhost:8090/'
 
 function App() {
 
