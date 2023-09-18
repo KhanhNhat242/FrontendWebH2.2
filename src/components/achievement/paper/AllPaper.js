@@ -1,11 +1,11 @@
 import Paper from "./Paper";
 
-function AllPaper({ paper }) {
+function AllPaper({ papers }) {
     const typePaper = 2
 
     return ( 
         <>
-            <Paper typePaper={typePaper} paper={paper} />
+            <Paper typePaper={typePaper} paper={papers} />
         </>
     );
 }

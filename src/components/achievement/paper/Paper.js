@@ -4,17 +4,22 @@ import AchieveNav from '../achieveNav/AchieveNav'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { useEffect } from 'react'
+// import { useEffect } from 'react'
 
-function Paper({ typePaper, paper }) {
+function Paper({ typePaper, papers }) {
     
     const handleTopPaper = () => {
-        paper.sort((a, b) => {
+        papers.sort((a, b) => {
             return b.year - a.year
         })
 
+<<<<<<< HEAD
+        return papers.map((p) => {
+            if(typePaper === 1 && p.interest === 'True')
+=======
         return paper.map((p) => {
             if(typePaper === 1 && p.interest)
+>>>>>>> 1ca45d66f774c994ba255b03a2382d492954583c
                 return (
                     <Row className='paper-row' key={p.title}>
                         <div className='col-lg-10 paper-col-left'>
@@ -49,11 +54,11 @@ function Paper({ typePaper, paper }) {
     }
 
     const handleAllPaper = () => {
-        paper.sort((a, b) => {
+        papers.sort((a, b) => {
             return b.year - a.year
         })
 
-        return paper.map((p) => {
+        return papers.map((p) => {
             if(typePaper === 2)
                 return (
                     <Row className='paper-row' key={p.title}>
