@@ -14,7 +14,7 @@ import {motion} from 'framer-motion'
 import { useEffect, useState } from 'react'
 
 
-function Achievement({ paper }){
+function Achievement({ papers }){
     const [eureka, setEureka] = useState(0)
     const [fdse, setFdse] = useState(0)
     const [ysc, setYsc] = useState(0)
@@ -23,7 +23,7 @@ function Achievement({ paper }){
     const typePaper = 0
 
     useEffect(() => {
-        paper.forEach((p) => {
+        papers.forEach((p) => {
             if(p.institute.trim() === 'Euréka')
                 setEureka(prev1 => prev1 + 1)
             else if(p.institute.trim() === 'FDSE')
@@ -33,7 +33,7 @@ function Achievement({ paper }){
             else 
                 setOther(prev4 => prev4 + 1)
         });
-    }, [paper])
+    }, [papers])
 
     // console.log(eureka);
 
