@@ -56,7 +56,7 @@ function Member({ members }) {
                     <div className='wrap-core-member'>
                         <Carousel1>
                             {members.map((m) => {
-                                if(m.role !== "alumni")
+                                if(m.role.indexOf("lumni") === -1)
                                     return (
                                         <Carousel1.Item interval={5000} key={m.id_user}>
                                             <div className='carousel-item-wrapper'>
@@ -82,7 +82,7 @@ function Member({ members }) {
                 <Row className='alumni-row'>
                     <h3 className='alumni-title'>Alumni</h3>
                     {members.map((m, index) => {
-                        if(m.role === 'alumni')
+                        if(m.role === 'alumni' || m.role === 'Alumni')
                             return (
                                 <Col className='avt-wrapper col-6 col-md-4' key={index}>
                                     <motion.div className='img-wrapper'
