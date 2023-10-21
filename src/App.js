@@ -11,7 +11,7 @@ import Member from './components/member/Member'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 
-const GLOBAL_URL_API = 'http://localhost:8090/'
+const GLOBAL_URL_API = 'https://core.aiclubiuh.com'
 
 function App() {
 
@@ -28,7 +28,9 @@ function App() {
       // console.log(res1)
       setMembers(res1.data)
       setEvents(res2.data)
+      console.log(res3.data)
       setPapers(res3.data)
+      
     }
     catch(err) {
       console.log(err)

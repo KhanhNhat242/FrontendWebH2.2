@@ -7,12 +7,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { useEffect } from 'react'
 
 function Paper({ typePaper, papers }) {
-    
+    console.log(papers);
     const handleTopPaper = () => {
+
         papers.sort((a, b) => {
             return b.year - a.year
         })
-
+        
         return papers.map((p) => {
             if(typePaper === 1 && p.interest == 'True')
                 return (
