@@ -5,7 +5,7 @@ function TopPaper({ papers }) {
 
     return ( 
         <>
-            <Paper typePaper={typePaper} paper={papers} />
+            <Paper typePaper={typePaper} papers={papers} />
         </>
      );
 }

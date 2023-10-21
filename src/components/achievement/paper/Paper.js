@@ -13,13 +13,8 @@ function Paper({ typePaper, papers }) {
             return b.year - a.year
         })
 
-<<<<<<< HEAD
         return papers.map((p) => {
             if(typePaper === 1 && p.interest === 'True')
-=======
-        return paper.map((p) => {
-            if(typePaper === 1 && p.interest)
->>>>>>> 1ca45d66f774c994ba255b03a2382d492954583c
                 return (
                     <Row className='paper-row' key={p.title}>
                         <div className='col-lg-10 paper-col-left'>

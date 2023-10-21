@@ -1,0 +1,1 @@
+cloudflared tunnel --config .cloudflared/config.yml --url localhost:3000 run webh2
